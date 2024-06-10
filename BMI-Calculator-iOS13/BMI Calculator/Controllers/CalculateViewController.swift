@@ -51,7 +51,7 @@ class CalculateViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult" {
-            let destinationVC  = segue.destination as! ResultViewController
+            let destinationVC = segue.destination as! ResultViewController
             destinationVC.modalPresentationStyle = .fullScreen
             destinationVC.bmiValue = calulateBrain.getBMIValue()
             destinationVC.advice = calulateBrain.getAdvice()

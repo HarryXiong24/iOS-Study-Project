@@ -56,3 +56,27 @@ let password = s
 
 
 print(password)
+
+func fibonacci(n: Int) {
+
+//Write your code here.
+
+    var array: [Int] = []
+    
+    if n > 0 {
+        array.append(0)
+    }
+    
+    if n > 1 {
+        array.append(1)
+    }
+    
+   
+    for i in 2..<n {
+       array.append(array[i-1] + array[i-2])
+    }
+       
+    print(array)
+}
+
+fibonacci(n: 5)
