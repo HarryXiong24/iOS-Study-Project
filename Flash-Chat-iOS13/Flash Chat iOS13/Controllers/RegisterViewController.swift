@@ -14,6 +14,29 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextfield: UITextField!
     
     @IBAction func registerPressed(_ sender: UIButton) {
+        
+        if let email = emailTextfield.text, let password = passwordTextfield.text {
+            
+            let fileName = "credentials.txt"
+            if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                let fileURL = documentDirectory.appendingPathComponent(fileName)
+                
+                let fileContents = "\(email)\n\(password)"
+                
+                do {
+                    try fileContents.write(to: fileURL, atomically: true, encoding: .utf8)
+                    print("Successful：\(fileURL.path)")
+                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                } catch {
+                    print(error)
+                }
+            } else {
+                print("No Directory!")
+            }
+            
+    
+        
+        }
     }
     
 }
