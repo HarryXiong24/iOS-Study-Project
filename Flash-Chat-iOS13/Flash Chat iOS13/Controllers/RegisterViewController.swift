@@ -17,7 +17,7 @@ class RegisterViewController: UIViewController {
         
         if let email = emailTextfield.text, let password = passwordTextfield.text {
             
-            let fileName = "credentials.txt"
+            let fileName = K.credentialsFileName
             if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
                 let fileURL = documentDirectory.appendingPathComponent(fileName)
                 
@@ -26,7 +26,7 @@ class RegisterViewController: UIViewController {
                 do {
                     try fileContents.write(to: fileURL, atomically: true, encoding: .utf8)
                     print("Successful：\(fileURL.path)")
-                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 } catch {
                     print(error)
                 }

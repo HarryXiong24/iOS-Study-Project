@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
         
         if let email = emailTextfield.text, let password = passwordTextfield.text {
             
-            let fileName = "credentials.txt"
+            let fileName = K.credentialsFileName
             if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
                 let fileURL = documentDirectory.appendingPathComponent(fileName)
                 
@@ -30,9 +30,8 @@ class LoginViewController: UIViewController {
                         let storedUsername = credentials[0]
                         let storedPassword = credentials[1]
                         
-                        // 进行对比
                         if storedUsername == email && storedPassword == password {
-                            self.performSegue(withIdentifier: "LoginToChat", sender: self)
+                            self.performSegue(withIdentifier: K.loginSegue, sender: self)
                         } else {
                             print("Username or Passord Error")
                         }
