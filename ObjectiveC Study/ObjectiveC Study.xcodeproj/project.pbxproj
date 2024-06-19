@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A4582AEA2C22A4C50022D524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AE92C22A4C50022D524 /* main.m */; };
-		A4582AF12C22A5200022D524 /* OCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AF02C22A5200022D524 /* OCClass.m */; };
+		A4582AF12C22A5200022D524 /* Class.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AF02C22A5200022D524 /* Class.m */; };
+		A4582AF62C238F750022D524 /* Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AF52C238F750022D524 /* Method.m */; };
+		A4582AF92C2393C80022D524 /* Encapsulate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AF82C2393C80022D524 /* Encapsulate.m */; };
+		A4582AFC2C2396AA0022D524 /* ClassMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AFB2C2396AA0022D524 /* ClassMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +29,14 @@
 /* Begin PBXFileReference section */
 		A4582AE62C22A4C50022D524 /* ObjectiveC Study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ObjectiveC Study"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4582AE92C22A4C50022D524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A4582AF02C22A5200022D524 /* OCClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCClass.m; sourceTree = "<group>"; };
-		A4582AF32C22A5370022D524 /* OCClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCClass.h; sourceTree = "<group>"; };
+		A4582AF02C22A5200022D524 /* Class.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class.m; sourceTree = "<group>"; };
+		A4582AF32C22A5370022D524 /* Class.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class.h; sourceTree = "<group>"; };
+		A4582AF52C238F750022D524 /* Method.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Method.m; sourceTree = "<group>"; };
+		A4582AF72C2391630022D524 /* Method.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Method.h; sourceTree = "<group>"; };
+		A4582AF82C2393C80022D524 /* Encapsulate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Encapsulate.m; sourceTree = "<group>"; };
+		A4582AFA2C2393D20022D524 /* Encapsulate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Encapsulate.h; sourceTree = "<group>"; };
+		A4582AFB2C2396AA0022D524 /* ClassMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassMethod.m; sourceTree = "<group>"; };
+		A4582AFD2C2396B50022D524 /* ClassMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassMethod.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,19 +69,25 @@
 		A4582AE82C22A4C50022D524 /* ObjectiveC Study */ = {
 			isa = PBXGroup;
 			children = (
-				A4582AF22C22A5270022D524 /* OCClass */,
+				A4582AF22C22A5270022D524 /* Class */,
 				A4582AE92C22A4C50022D524 /* main.m */,
 			);
 			path = "ObjectiveC Study";
 			sourceTree = "<group>";
 		};
-		A4582AF22C22A5270022D524 /* OCClass */ = {
+		A4582AF22C22A5270022D524 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				A4582AF02C22A5200022D524 /* OCClass.m */,
-				A4582AF32C22A5370022D524 /* OCClass.h */,
+				A4582AF02C22A5200022D524 /* Class.m */,
+				A4582AF32C22A5370022D524 /* Class.h */,
+				A4582AF52C238F750022D524 /* Method.m */,
+				A4582AF72C2391630022D524 /* Method.h */,
+				A4582AF82C2393C80022D524 /* Encapsulate.m */,
+				A4582AFA2C2393D20022D524 /* Encapsulate.h */,
+				A4582AFB2C2396AA0022D524 /* ClassMethod.m */,
+				A4582AFD2C2396B50022D524 /* ClassMethod.h */,
 			);
-			path = OCClass;
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4582AF12C22A5200022D524 /* OCClass.m in Sources */,
+				A4582AF12C22A5200022D524 /* Class.m in Sources */,
+				A4582AF92C2393C80022D524 /* Encapsulate.m in Sources */,
+				A4582AF62C238F750022D524 /* Method.m in Sources */,
+				A4582AFC2C2396AA0022D524 /* ClassMethod.m in Sources */,
 				A4582AEA2C22A4C50022D524 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
