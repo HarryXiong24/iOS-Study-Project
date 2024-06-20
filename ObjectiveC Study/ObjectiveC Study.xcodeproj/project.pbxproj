@@ -17,6 +17,8 @@
 		A4DDA0D32C23A38000A26FBD /* Inheritance.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0D22C23A38000A26FBD /* Inheritance.m */; };
 		A4DDA0D62C23A76100A26FBD /* Super.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0D52C23A76100A26FBD /* Super.m */; };
 		A4DDA0D92C23A85900A26FBD /* Polymorphism.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0D82C23A85900A26FBD /* Polymorphism.m */; };
+		A4DDA0DD2C23DF3400A26FBD /* String.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0DC2C23DF3400A26FBD /* String.m */; };
+		A4DDA0E12C23E0E500A26FBD /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0E02C23E0E500A26FBD /* Circle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +54,11 @@
 		A4DDA0D72C23A76900A26FBD /* Super.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Super.h; sourceTree = "<group>"; };
 		A4DDA0D82C23A85900A26FBD /* Polymorphism.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Polymorphism.m; sourceTree = "<group>"; };
 		A4DDA0DA2C23A86000A26FBD /* Polymorphism.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Polymorphism.h; sourceTree = "<group>"; };
+		A4DDA0DB2C23DDF500A26FBD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A4DDA0DC2C23DF3400A26FBD /* String.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = String.m; sourceTree = "<group>"; };
+		A4DDA0DE2C23DF3B00A26FBD /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
+		A4DDA0E02C23E0E500A26FBD /* Circle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		A4DDA0E22C23E0EF00A26FBD /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +91,11 @@
 		A4582AE82C22A4C50022D524 /* ObjectiveC Study */ = {
 			isa = PBXGroup;
 			children = (
+				A4DDA0DF2C23E09C00A26FBD /* Practice */,
 				A4DDA0CE2C23A0CE00A26FBD /* Basic */,
 				A4582AF22C22A5270022D524 /* Class */,
 				A4582AE92C22A4C50022D524 /* main.m */,
+				A4DDA0DB2C23DDF500A26FBD /* README.md */,
 			);
 			path = "ObjectiveC Study";
 			sourceTree = "<group>";
@@ -119,8 +128,19 @@
 			children = (
 				A4DDA0CF2C23A0E000A26FBD /* Basic.m */,
 				A4DDA0D12C23A25D00A26FBD /* Basic.h */,
+				A4DDA0DC2C23DF3400A26FBD /* String.m */,
+				A4DDA0DE2C23DF3B00A26FBD /* String.h */,
 			);
 			path = Basic;
+			sourceTree = "<group>";
+		};
+		A4DDA0DF2C23E09C00A26FBD /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDA0E02C23E0E500A26FBD /* Circle.m */,
+				A4DDA0E22C23E0EF00A26FBD /* Circle.h */,
+			);
+			path = Practice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +208,8 @@
 				A4DDA0CC2C239D9300A26FBD /* Self.m in Sources */,
 				A4DDA0D92C23A85900A26FBD /* Polymorphism.m in Sources */,
 				A4DDA0D02C23A0E000A26FBD /* Basic.m in Sources */,
+				A4DDA0DD2C23DF3400A26FBD /* String.m in Sources */,
+				A4DDA0E12C23E0E500A26FBD /* Circle.m in Sources */,
 				A4582AFC2C2396AA0022D524 /* ClassMethod.m in Sources */,
 				A4582AEA2C22A4C50022D524 /* main.m in Sources */,
 			);

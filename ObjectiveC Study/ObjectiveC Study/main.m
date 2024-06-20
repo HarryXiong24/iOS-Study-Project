@@ -15,6 +15,8 @@
 #import "Class/Inheritance.h"
 #import "Class/Super.h"
 #import "Class/Polymorphism.h"
+#import "Basic/String.h"
+#import "Practice/Circle.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -28,6 +30,8 @@ int main(int argc, const char * argv[]) {
         testInheritance();
         testSuper();
         testPolymorphism();
+        testString();
+        testCircle();
         
         return 0;
     }
