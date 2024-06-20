@@ -23,9 +23,9 @@
 - (void)setGrade2:(double)score;
 - (double)grade2;
 
-- (double)totalGrade;
+- (double)getTotalGrade;
 
-- (double)meanGrade;
+- (double)getMeanGrade;
 
 @end
 

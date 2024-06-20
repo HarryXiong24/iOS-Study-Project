@@ -10,7 +10,6 @@
 
 @implementation Grade
 
-
 - (void)setGrade1:(double)score {
     _grade1 = score;
 }

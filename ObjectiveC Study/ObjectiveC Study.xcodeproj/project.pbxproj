@@ -12,6 +12,11 @@
 		A4582AF62C238F750022D524 /* Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AF52C238F750022D524 /* Method.m */; };
 		A4582AF92C2393C80022D524 /* Encapsulate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AF82C2393C80022D524 /* Encapsulate.m */; };
 		A4582AFC2C2396AA0022D524 /* ClassMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AFB2C2396AA0022D524 /* ClassMethod.m */; };
+		A4DDA0CC2C239D9300A26FBD /* Self.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0CB2C239D9300A26FBD /* Self.m */; };
+		A4DDA0D02C23A0E000A26FBD /* Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0CF2C23A0E000A26FBD /* Basic.m */; };
+		A4DDA0D32C23A38000A26FBD /* Inheritance.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0D22C23A38000A26FBD /* Inheritance.m */; };
+		A4DDA0D62C23A76100A26FBD /* Super.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0D52C23A76100A26FBD /* Super.m */; };
+		A4DDA0D92C23A85900A26FBD /* Polymorphism.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0D82C23A85900A26FBD /* Polymorphism.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +42,16 @@
 		A4582AFA2C2393D20022D524 /* Encapsulate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Encapsulate.h; sourceTree = "<group>"; };
 		A4582AFB2C2396AA0022D524 /* ClassMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassMethod.m; sourceTree = "<group>"; };
 		A4582AFD2C2396B50022D524 /* ClassMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassMethod.h; sourceTree = "<group>"; };
+		A4DDA0CB2C239D9300A26FBD /* Self.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Self.m; sourceTree = "<group>"; };
+		A4DDA0CD2C239D9B00A26FBD /* Self.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Self.h; sourceTree = "<group>"; };
+		A4DDA0CF2C23A0E000A26FBD /* Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Basic.m; sourceTree = "<group>"; };
+		A4DDA0D12C23A25D00A26FBD /* Basic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Basic.h; sourceTree = "<group>"; };
+		A4DDA0D22C23A38000A26FBD /* Inheritance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Inheritance.m; path = "Jìchéng yǔ duō tài 6 /Inheritance.m"; sourceTree = "<group>"; };
+		A4DDA0D42C23A39A00A26FBD /* Inheritance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inheritance.h; sourceTree = "<group>"; };
+		A4DDA0D52C23A76100A26FBD /* Super.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Super.m; sourceTree = "<group>"; };
+		A4DDA0D72C23A76900A26FBD /* Super.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Super.h; sourceTree = "<group>"; };
+		A4DDA0D82C23A85900A26FBD /* Polymorphism.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Polymorphism.m; sourceTree = "<group>"; };
+		A4DDA0DA2C23A86000A26FBD /* Polymorphism.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Polymorphism.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +84,7 @@
 		A4582AE82C22A4C50022D524 /* ObjectiveC Study */ = {
 			isa = PBXGroup;
 			children = (
+				A4DDA0CE2C23A0CE00A26FBD /* Basic */,
 				A4582AF22C22A5270022D524 /* Class */,
 				A4582AE92C22A4C50022D524 /* main.m */,
 			);
@@ -86,8 +102,25 @@
 				A4582AFA2C2393D20022D524 /* Encapsulate.h */,
 				A4582AFB2C2396AA0022D524 /* ClassMethod.m */,
 				A4582AFD2C2396B50022D524 /* ClassMethod.h */,
+				A4DDA0CB2C239D9300A26FBD /* Self.m */,
+				A4DDA0CD2C239D9B00A26FBD /* Self.h */,
+				A4DDA0D22C23A38000A26FBD /* Inheritance.m */,
+				A4DDA0D42C23A39A00A26FBD /* Inheritance.h */,
+				A4DDA0D52C23A76100A26FBD /* Super.m */,
+				A4DDA0D72C23A76900A26FBD /* Super.h */,
+				A4DDA0D82C23A85900A26FBD /* Polymorphism.m */,
+				A4DDA0DA2C23A86000A26FBD /* Polymorphism.h */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		A4DDA0CE2C23A0CE00A26FBD /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDA0CF2C23A0E000A26FBD /* Basic.m */,
+				A4DDA0D12C23A25D00A26FBD /* Basic.h */,
+			);
+			path = Basic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +182,12 @@
 			files = (
 				A4582AF12C22A5200022D524 /* Class.m in Sources */,
 				A4582AF92C2393C80022D524 /* Encapsulate.m in Sources */,
+				A4DDA0D32C23A38000A26FBD /* Inheritance.m in Sources */,
+				A4DDA0D62C23A76100A26FBD /* Super.m in Sources */,
 				A4582AF62C238F750022D524 /* Method.m in Sources */,
+				A4DDA0CC2C239D9300A26FBD /* Self.m in Sources */,
+				A4DDA0D92C23A85900A26FBD /* Polymorphism.m in Sources */,
+				A4DDA0D02C23A0E000A26FBD /* Basic.m in Sources */,
 				A4582AFC2C2396AA0022D524 /* ClassMethod.m in Sources */,
 				A4582AEA2C22A4C50022D524 /* main.m in Sources */,
 			);
