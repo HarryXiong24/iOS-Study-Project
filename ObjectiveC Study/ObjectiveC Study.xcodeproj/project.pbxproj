@@ -12,6 +12,16 @@
 		A4582AF62C238F750022D524 /* Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AF52C238F750022D524 /* Method.m */; };
 		A4582AF92C2393C80022D524 /* Encapsulate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AF82C2393C80022D524 /* Encapsulate.m */; };
 		A4582AFC2C2396AA0022D524 /* ClassMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AFB2C2396AA0022D524 /* ClassMethod.m */; };
+		A492014A2C25319D00506787 /* Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = A49201492C25319D00506787 /* Properties.m */; };
+		A492014E2C25322100506787 /* SEL.m in Sources */ = {isa = PBXBuildFile; fileRef = A492014D2C25322100506787 /* SEL.m */; };
+		A497194C2C2544E3007D4BC9 /* Array.m in Sources */ = {isa = PBXBuildFile; fileRef = A497194B2C2544E3007D4BC9 /* Array.m */; };
+		A497194F2C254535007D4BC9 /* LiteralSyntax.m in Sources */ = {isa = PBXBuildFile; fileRef = A497194E2C254535007D4BC9 /* LiteralSyntax.m */; };
+		A49719522C254573007D4BC9 /* IDPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = A49719512C254573007D4BC9 /* IDPointer.m */; };
+		A49719552C25459A007D4BC9 /* ConstructMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A49719542C25459A007D4BC9 /* ConstructMethod.m */; };
+		A49719582C2545C1007D4BC9 /* NSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A49719572C2545C1007D4BC9 /* NSLog.m */; };
+		A497195B2C2545E4007D4BC9 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A497195A2C2545E4007D4BC9 /* Category.m */; };
+		A497195E2C25460D007D4BC9 /* ClassExecuteWay.m in Sources */ = {isa = PBXBuildFile; fileRef = A497195D2C25460D007D4BC9 /* ClassExecuteWay.m */; };
+		A49719612C254647007D4BC9 /* Description.m in Sources */ = {isa = PBXBuildFile; fileRef = A49719602C254647007D4BC9 /* Description.m */; };
 		A4DDA0CC2C239D9300A26FBD /* Self.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0CB2C239D9300A26FBD /* Self.m */; };
 		A4DDA0D02C23A0E000A26FBD /* Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0CF2C23A0E000A26FBD /* Basic.m */; };
 		A4DDA0D32C23A38000A26FBD /* Inheritance.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0D22C23A38000A26FBD /* Inheritance.m */; };
@@ -44,6 +54,26 @@
 		A4582AFA2C2393D20022D524 /* Encapsulate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Encapsulate.h; sourceTree = "<group>"; };
 		A4582AFB2C2396AA0022D524 /* ClassMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassMethod.m; sourceTree = "<group>"; };
 		A4582AFD2C2396B50022D524 /* ClassMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassMethod.h; sourceTree = "<group>"; };
+		A49201492C25319D00506787 /* Properties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Properties.m; sourceTree = "<group>"; };
+		A492014B2C2531A300506787 /* Properties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Properties.h; sourceTree = "<group>"; };
+		A492014D2C25322100506787 /* SEL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEL.m; sourceTree = "<group>"; };
+		A492014F2C25322600506787 /* SEL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEL.h; sourceTree = "<group>"; };
+		A497194B2C2544E3007D4BC9 /* Array.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Array.m; sourceTree = "<group>"; };
+		A497194D2C2544EB007D4BC9 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		A497194E2C254535007D4BC9 /* LiteralSyntax.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiteralSyntax.m; sourceTree = "<group>"; };
+		A49719502C25453E007D4BC9 /* LiteralSyntax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiteralSyntax.h; sourceTree = "<group>"; };
+		A49719512C254573007D4BC9 /* IDPointer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPointer.m; sourceTree = "<group>"; };
+		A49719532C254579007D4BC9 /* IDPointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPointer.h; sourceTree = "<group>"; };
+		A49719542C25459A007D4BC9 /* ConstructMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstructMethod.m; sourceTree = "<group>"; };
+		A49719562C2545A1007D4BC9 /* ConstructMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstructMethod.h; sourceTree = "<group>"; };
+		A49719572C2545C1007D4BC9 /* NSLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLog.m; sourceTree = "<group>"; };
+		A49719592C2545C7007D4BC9 /* NSLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLog.h; sourceTree = "<group>"; };
+		A497195A2C2545E4007D4BC9 /* Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		A497195C2C2545EB007D4BC9 /* Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		A497195D2C25460D007D4BC9 /* ClassExecuteWay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassExecuteWay.m; sourceTree = "<group>"; };
+		A497195F2C254612007D4BC9 /* ClassExecuteWay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassExecuteWay.h; sourceTree = "<group>"; };
+		A49719602C254647007D4BC9 /* Description.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Description.m; sourceTree = "<group>"; };
+		A49719622C25464E007D4BC9 /* Description.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Description.h; sourceTree = "<group>"; };
 		A4DDA0CB2C239D9300A26FBD /* Self.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Self.m; sourceTree = "<group>"; };
 		A4DDA0CD2C239D9B00A26FBD /* Self.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Self.h; sourceTree = "<group>"; };
 		A4DDA0CF2C23A0E000A26FBD /* Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Basic.m; sourceTree = "<group>"; };
@@ -91,6 +121,7 @@
 		A4582AE82C22A4C50022D524 /* ObjectiveC Study */ = {
 			isa = PBXGroup;
 			children = (
+				A492014C2C25321100506787 /* Advanced */,
 				A4DDA0DF2C23E09C00A26FBD /* Practice */,
 				A4DDA0CE2C23A0CE00A26FBD /* Basic */,
 				A4582AF22C22A5270022D524 /* Class */,
@@ -119,8 +150,25 @@
 				A4DDA0D72C23A76900A26FBD /* Super.h */,
 				A4DDA0D82C23A85900A26FBD /* Polymorphism.m */,
 				A4DDA0DA2C23A86000A26FBD /* Polymorphism.h */,
+				A49201492C25319D00506787 /* Properties.m */,
+				A492014B2C2531A300506787 /* Properties.h */,
+				A49719542C25459A007D4BC9 /* ConstructMethod.m */,
+				A49719562C2545A1007D4BC9 /* ConstructMethod.h */,
+				A497195A2C2545E4007D4BC9 /* Category.m */,
+				A497195C2C2545EB007D4BC9 /* Category.h */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		A492014C2C25321100506787 /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				A492014D2C25322100506787 /* SEL.m */,
+				A492014F2C25322600506787 /* SEL.h */,
+				A497195D2C25460D007D4BC9 /* ClassExecuteWay.m */,
+				A497195F2C254612007D4BC9 /* ClassExecuteWay.h */,
+			);
+			path = Advanced;
 			sourceTree = "<group>";
 		};
 		A4DDA0CE2C23A0CE00A26FBD /* Basic */ = {
@@ -130,6 +178,16 @@
 				A4DDA0D12C23A25D00A26FBD /* Basic.h */,
 				A4DDA0DC2C23DF3400A26FBD /* String.m */,
 				A4DDA0DE2C23DF3B00A26FBD /* String.h */,
+				A497194B2C2544E3007D4BC9 /* Array.m */,
+				A497194D2C2544EB007D4BC9 /* Array.h */,
+				A497194E2C254535007D4BC9 /* LiteralSyntax.m */,
+				A49719502C25453E007D4BC9 /* LiteralSyntax.h */,
+				A49719512C254573007D4BC9 /* IDPointer.m */,
+				A49719532C254579007D4BC9 /* IDPointer.h */,
+				A49719572C2545C1007D4BC9 /* NSLog.m */,
+				A49719592C2545C7007D4BC9 /* NSLog.h */,
+				A49719602C254647007D4BC9 /* Description.m */,
+				A49719622C25464E007D4BC9 /* Description.h */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -202,15 +260,25 @@
 			files = (
 				A4582AF12C22A5200022D524 /* Class.m in Sources */,
 				A4582AF92C2393C80022D524 /* Encapsulate.m in Sources */,
+				A49719522C254573007D4BC9 /* IDPointer.m in Sources */,
 				A4DDA0D32C23A38000A26FBD /* Inheritance.m in Sources */,
 				A4DDA0D62C23A76100A26FBD /* Super.m in Sources */,
 				A4582AF62C238F750022D524 /* Method.m in Sources */,
+				A49719582C2545C1007D4BC9 /* NSLog.m in Sources */,
+				A497195B2C2545E4007D4BC9 /* Category.m in Sources */,
 				A4DDA0CC2C239D9300A26FBD /* Self.m in Sources */,
+				A492014E2C25322100506787 /* SEL.m in Sources */,
 				A4DDA0D92C23A85900A26FBD /* Polymorphism.m in Sources */,
+				A492014A2C25319D00506787 /* Properties.m in Sources */,
 				A4DDA0D02C23A0E000A26FBD /* Basic.m in Sources */,
+				A497195E2C25460D007D4BC9 /* ClassExecuteWay.m in Sources */,
 				A4DDA0DD2C23DF3400A26FBD /* String.m in Sources */,
+				A49719552C25459A007D4BC9 /* ConstructMethod.m in Sources */,
+				A49719612C254647007D4BC9 /* Description.m in Sources */,
 				A4DDA0E12C23E0E500A26FBD /* Circle.m in Sources */,
+				A497194C2C2544E3007D4BC9 /* Array.m in Sources */,
 				A4582AFC2C2396AA0022D524 /* ClassMethod.m in Sources */,
+				A497194F2C254535007D4BC9 /* LiteralSyntax.m in Sources */,
 				A4582AEA2C22A4C50022D524 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

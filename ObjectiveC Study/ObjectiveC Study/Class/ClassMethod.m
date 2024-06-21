@@ -63,4 +63,7 @@ void testClassMethod(void)
     // 对象实例不能调用来方法，系统会认为现在调用的 printClassName 是个对象方法
     // [p printClassName];
     
+    // 类本身也是一个对象，我们可以用 Class 来创建一个类对象
+    Class personClass = [Person class];
+    [personClass printClassName];
 }

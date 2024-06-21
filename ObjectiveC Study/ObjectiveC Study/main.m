@@ -17,6 +17,16 @@
 #import "Class/Polymorphism.h"
 #import "Basic/String.h"
 #import "Practice/Circle.h"
+#import "Class/Properties.h"
+#import "Advanced/SEL.h"
+#import "Basic/Array.h"
+#import "Basic/LiteralSyntax.h"
+#import "Basic/IDPointer.h"
+#import "Class/ConstructMethod.h"
+#import "Basic/NSLog.h"
+#import "Class/Category.h"
+#import "Advanced/ClassExecuteWay.h"
+#import "Basic/Description.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -32,6 +42,16 @@ int main(int argc, const char * argv[]) {
         testPolymorphism();
         testString();
         testCircle();
+        testProperties();
+        testSEL();
+        testArray();
+        testLiteralSyntax();
+        testIDPointer();
+        testConstructMethod();
+        testNSLog();
+        testCategory();
+        testClassExecuteWay();
+        testDesciption();
         
         return 0;
     }
