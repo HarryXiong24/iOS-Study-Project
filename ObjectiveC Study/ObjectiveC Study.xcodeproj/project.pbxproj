@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41C97DA2C2684DD00A01E08 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C97D92C2684DD00A01E08 /* Block.m */; };
+		A41C97DE2C2688AD00A01E08 /* Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C97DD2C2688AD00A01E08 /* Protocol.m */; };
+		A41C97E22C2688EB00A01E08 /* DelegatePattern.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C97E12C2688EA00A01E08 /* DelegatePattern.m */; };
+		A41C97E42C26891200A01E08 /* BuyTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C97E32C26891200A01E08 /* BuyTickets.m */; };
+		A41C97E72C268C7900A01E08 /* Inheritance.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C97E62C268C7900A01E08 /* Inheritance.m */; };
 		A4582AEA2C22A4C50022D524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AE92C22A4C50022D524 /* main.m */; };
 		A4582AF12C22A5200022D524 /* Class.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AF02C22A5200022D524 /* Class.m */; };
 		A4582AF62C238F750022D524 /* Method.m in Sources */ = {isa = PBXBuildFile; fileRef = A4582AF52C238F750022D524 /* Method.m */; };
@@ -24,7 +29,6 @@
 		A49719612C254647007D4BC9 /* Description.m in Sources */ = {isa = PBXBuildFile; fileRef = A49719602C254647007D4BC9 /* Description.m */; };
 		A4DDA0CC2C239D9300A26FBD /* Self.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0CB2C239D9300A26FBD /* Self.m */; };
 		A4DDA0D02C23A0E000A26FBD /* Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0CF2C23A0E000A26FBD /* Basic.m */; };
-		A4DDA0D32C23A38000A26FBD /* Inheritance.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0D22C23A38000A26FBD /* Inheritance.m */; };
 		A4DDA0D62C23A76100A26FBD /* Super.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0D52C23A76100A26FBD /* Super.m */; };
 		A4DDA0D92C23A85900A26FBD /* Polymorphism.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0D82C23A85900A26FBD /* Polymorphism.m */; };
 		A4DDA0DD2C23DF3400A26FBD /* String.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DDA0DC2C23DF3400A26FBD /* String.m */; };
@@ -44,6 +48,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A41C97D92C2684DD00A01E08 /* Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
+		A41C97DB2C2684E400A01E08 /* Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
+		A41C97DD2C2688AD00A01E08 /* Protocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Protocol.m; sourceTree = "<group>"; };
+		A41C97DF2C2688B400A01E08 /* Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
+		A41C97E02C2688E200A01E08 /* DelegatePattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegatePattern.h; sourceTree = "<group>"; };
+		A41C97E12C2688EA00A01E08 /* DelegatePattern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegatePattern.m; sourceTree = "<group>"; };
+		A41C97E32C26891200A01E08 /* BuyTickets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuyTickets.m; sourceTree = "<group>"; };
+		A41C97E52C26891C00A01E08 /* BuyTickets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuyTickets.h; sourceTree = "<group>"; };
+		A41C97E62C268C7900A01E08 /* Inheritance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Inheritance.m; sourceTree = "<group>"; };
 		A4582AE62C22A4C50022D524 /* ObjectiveC Study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ObjectiveC Study"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4582AE92C22A4C50022D524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4582AF02C22A5200022D524 /* Class.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class.m; sourceTree = "<group>"; };
@@ -78,7 +91,6 @@
 		A4DDA0CD2C239D9B00A26FBD /* Self.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Self.h; sourceTree = "<group>"; };
 		A4DDA0CF2C23A0E000A26FBD /* Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Basic.m; sourceTree = "<group>"; };
 		A4DDA0D12C23A25D00A26FBD /* Basic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Basic.h; sourceTree = "<group>"; };
-		A4DDA0D22C23A38000A26FBD /* Inheritance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Inheritance.m; path = "Jìchéng yǔ duō tài 6 /Inheritance.m"; sourceTree = "<group>"; };
 		A4DDA0D42C23A39A00A26FBD /* Inheritance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inheritance.h; sourceTree = "<group>"; };
 		A4DDA0D52C23A76100A26FBD /* Super.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Super.m; sourceTree = "<group>"; };
 		A4DDA0D72C23A76900A26FBD /* Super.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Super.h; sourceTree = "<group>"; };
@@ -102,6 +114,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A41C97DC2C2686DE00A01E08 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A41C97DD2C2688AD00A01E08 /* Protocol.m */,
+				A41C97DF2C2688B400A01E08 /* Protocol.h */,
+				A41C97E12C2688EA00A01E08 /* DelegatePattern.m */,
+				A41C97E02C2688E200A01E08 /* DelegatePattern.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		A4582ADD2C22A4C50022D524 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +144,7 @@
 		A4582AE82C22A4C50022D524 /* ObjectiveC Study */ = {
 			isa = PBXGroup;
 			children = (
+				A41C97DC2C2686DE00A01E08 /* Protocol */,
 				A492014C2C25321100506787 /* Advanced */,
 				A4DDA0DF2C23E09C00A26FBD /* Practice */,
 				A4DDA0CE2C23A0CE00A26FBD /* Basic */,
@@ -144,7 +168,7 @@
 				A4582AFD2C2396B50022D524 /* ClassMethod.h */,
 				A4DDA0CB2C239D9300A26FBD /* Self.m */,
 				A4DDA0CD2C239D9B00A26FBD /* Self.h */,
-				A4DDA0D22C23A38000A26FBD /* Inheritance.m */,
+				A41C97E62C268C7900A01E08 /* Inheritance.m */,
 				A4DDA0D42C23A39A00A26FBD /* Inheritance.h */,
 				A4DDA0D52C23A76100A26FBD /* Super.m */,
 				A4DDA0D72C23A76900A26FBD /* Super.h */,
@@ -167,6 +191,8 @@
 				A492014F2C25322600506787 /* SEL.h */,
 				A497195D2C25460D007D4BC9 /* ClassExecuteWay.m */,
 				A497195F2C254612007D4BC9 /* ClassExecuteWay.h */,
+				A41C97D92C2684DD00A01E08 /* Block.m */,
+				A41C97DB2C2684E400A01E08 /* Block.h */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -197,6 +223,8 @@
 			children = (
 				A4DDA0E02C23E0E500A26FBD /* Circle.m */,
 				A4DDA0E22C23E0EF00A26FBD /* Circle.h */,
+				A41C97E32C26891200A01E08 /* BuyTickets.m */,
+				A41C97E52C26891C00A01E08 /* BuyTickets.h */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -260,12 +288,13 @@
 			files = (
 				A4582AF12C22A5200022D524 /* Class.m in Sources */,
 				A4582AF92C2393C80022D524 /* Encapsulate.m in Sources */,
+				A41C97E42C26891200A01E08 /* BuyTickets.m in Sources */,
 				A49719522C254573007D4BC9 /* IDPointer.m in Sources */,
-				A4DDA0D32C23A38000A26FBD /* Inheritance.m in Sources */,
 				A4DDA0D62C23A76100A26FBD /* Super.m in Sources */,
 				A4582AF62C238F750022D524 /* Method.m in Sources */,
 				A49719582C2545C1007D4BC9 /* NSLog.m in Sources */,
 				A497195B2C2545E4007D4BC9 /* Category.m in Sources */,
+				A41C97E72C268C7900A01E08 /* Inheritance.m in Sources */,
 				A4DDA0CC2C239D9300A26FBD /* Self.m in Sources */,
 				A492014E2C25322100506787 /* SEL.m in Sources */,
 				A4DDA0D92C23A85900A26FBD /* Polymorphism.m in Sources */,
@@ -273,13 +302,16 @@
 				A4DDA0D02C23A0E000A26FBD /* Basic.m in Sources */,
 				A497195E2C25460D007D4BC9 /* ClassExecuteWay.m in Sources */,
 				A4DDA0DD2C23DF3400A26FBD /* String.m in Sources */,
+				A41C97E22C2688EB00A01E08 /* DelegatePattern.m in Sources */,
 				A49719552C25459A007D4BC9 /* ConstructMethod.m in Sources */,
 				A49719612C254647007D4BC9 /* Description.m in Sources */,
 				A4DDA0E12C23E0E500A26FBD /* Circle.m in Sources */,
+				A41C97DA2C2684DD00A01E08 /* Block.m in Sources */,
 				A497194C2C2544E3007D4BC9 /* Array.m in Sources */,
 				A4582AFC2C2396AA0022D524 /* ClassMethod.m in Sources */,
 				A497194F2C254535007D4BC9 /* LiteralSyntax.m in Sources */,
 				A4582AEA2C22A4C50022D524 /* main.m in Sources */,
+				A41C97DE2C2688AD00A01E08 /* Protocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

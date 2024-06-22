@@ -2,7 +2,7 @@
 //  Inheritance.m
 //  ObjectiveC Study
 //
-//  Created by Harry Xiong on 2024/6/19.
+//  Created by Harry Xiong on 2024/6/21.
 //
 
 #import <Foundation/Foundation.h>

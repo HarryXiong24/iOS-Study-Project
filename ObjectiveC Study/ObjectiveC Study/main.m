@@ -27,6 +27,10 @@
 #import "Class/Category.h"
 #import "Advanced/ClassExecuteWay.h"
 #import "Basic/Description.h"
+#import "Advanced/Block.h"
+#import "Protocol/Protocol.h"
+#import "Protocol/DelegatePattern.h"
+#import "Practice/BuyTickets.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -52,6 +56,9 @@ int main(int argc, const char * argv[]) {
         testCategory();
         testClassExecuteWay();
         testDesciption();
+        testBlock();
+        testDelegate();
+        testBuyTick();
         
         return 0;
     }
