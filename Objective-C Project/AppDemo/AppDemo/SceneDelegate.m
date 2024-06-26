@@ -29,20 +29,13 @@
 //    navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
     
    
-    ViewController *viewController1 = [[ViewController alloc] init];
 //    UIViewController *controller1 = [[UIViewController alloc] init];
 //    controller1.view.backgroundColor = [UIColor lightGrayColor];
+    ViewController *viewController1 = [[ViewController alloc] init];
     viewController1.tabBarItem.title = @"TestA";
     
-//    UIViewController *controller2 = [[UIViewController alloc] init];
-//    viewController2.view.backgroundColor = [UIColor lightGrayColor];
     ViewController2 *viewController2 = [[ViewController2 alloc] init];
-    viewController2.tabBarItem.title = @"TestB";
-    
-//    UIViewController *controller3 = [[UIViewController alloc] init];
-//    viewController3.view.backgroundColor = [UIColor lightGrayColor];
     ViewController3 *viewController3 = [[ViewController3 alloc] init];
-    viewController3.tabBarItem.title = @"TestC";
     
     UIViewController *controller4 = [[UIViewController alloc] init];
     controller4.view.backgroundColor = [UIColor lightGrayColor];
