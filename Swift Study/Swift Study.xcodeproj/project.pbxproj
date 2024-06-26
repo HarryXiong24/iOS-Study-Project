@@ -23,6 +23,7 @@
 		A464C2162C2A7B72007ECC7C /* DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464C2152C2A7B72007ECC7C /* DelegatePattern.swift */; };
 		A464C21B2C2A7D26007ECC7C /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464C21A2C2A7D26007ECC7C /* Circle.swift */; };
 		A464C21D2C2A8179007ECC7C /* BuyTickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464C21C2C2A8179007ECC7C /* BuyTickets.swift */; };
+		A46C08EF2C2BC0B7001F887C /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46C08EE2C2BC0B7001F887C /* Async.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,7 @@
 		A464C2152C2A7B72007ECC7C /* DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePattern.swift; sourceTree = "<group>"; };
 		A464C21A2C2A7D26007ECC7C /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		A464C21C2C2A8179007ECC7C /* BuyTickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTickets.swift; sourceTree = "<group>"; };
+		A46C08EE2C2BC0B7001F887C /* Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				A464C20D2C2A7678007ECC7C /* Extension.swift */,
 				A464C2112C2A78B9007ECC7C /* Protocol.swift */,
 				A464C2152C2A7B72007ECC7C /* DelegatePattern.swift */,
+				A46C08EE2C2BC0B7001F887C /* Async.swift */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				A464C2022C2A754D007ECC7C /* Description.swift in Sources */,
 				A464C2122C2A78B9007ECC7C /* Protocol.swift in Sources */,
 				A464C21D2C2A8179007ECC7C /* BuyTickets.swift in Sources */,
+				A46C08EF2C2BC0B7001F887C /* Async.swift in Sources */,
 				A464C1FE2C2A752D007ECC7C /* Class.swift in Sources */,
 				A464C1F82C2A74F9007ECC7C /* DataTypes.swift in Sources */,
 				A464C20E2C2A7678007ECC7C /* Extension.swift in Sources */,
