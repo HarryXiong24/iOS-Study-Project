@@ -5,7 +5,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController2 : UIViewController
-
+@interface TableListController : UIViewController
 
 @end

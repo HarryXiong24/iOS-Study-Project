@@ -3,34 +3,36 @@
 //  AppDemo
 //
 
-#import "ViewController2.h"
+#import "../Components/DeleteCellView.h"
+#import "../Components/NormalTableViewCell.h"
+#import "TableListController.h"
 
-@interface ViewController2 () <UITableViewDataSource, UITableViewDelegate>
+@interface TableListController () <UITableViewDataSource, UITableViewDelegate, NormalTableViewCellDelegate>
 
 @end
 
-@implementation ViewController2
+@implementation TableListController
 
-- (instancetype) init {
+- (instancetype)init {
     self = [super init];
+
     if (self) {
         self.tabBarItem.title = @"TableList";
     }
-    
+
     return self;
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
     self.view.backgroundColor = [UIColor whiteColor];
-    
+
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-    
+
     [self.view addSubview:tableView];
-    
+
     tableView.dataSource = self;
     tableView.delegate = self;
 }
@@ -39,17 +41,16 @@
     return 20;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id"];
+    NormalTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id"];
+
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
+        cell = [[NormalTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
+        cell.delegate = self;
     }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"Title-%@", @(indexPath.row)] ;
-    cell.detailTextLabel.text = @"Sub-Title";
-    
+
+    [cell layoutTableViewCell];
+
     return cell;
 }
 
@@ -59,10 +60,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController *controller = [[UIViewController alloc] init];
-    
+
     controller.title = [NSString stringWithFormat:@"%@", @(indexPath.row)];
-    
+
     [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void)tableViewCell:(UITableViewCell *)tableViewCell clickDeleteButton:(UIButton *)button {
+    DeleteCellView *deleteCellView = [[DeleteCellView alloc] initWithFrame:self.view.bounds];
+    CGRect rect = [tableViewCell convertRect:button.frame toView:nil];
+
+    [deleteCellView showDeleteViewFromPoint:rect.origin
+                                 clickBlock:^{
+        NSLog(@"Delete!");
+    }];
 }
 
 @end

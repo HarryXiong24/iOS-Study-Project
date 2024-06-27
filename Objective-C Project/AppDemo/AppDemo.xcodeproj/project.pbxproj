@@ -9,14 +9,18 @@
 /* Begin PBXBuildFile section */
 		2BD257C42C2B7BC500215ACC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257C32C2B7BC500215ACC /* AppDelegate.m */; };
 		2BD257C72C2B7BC500215ACC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257C62C2B7BC500215ACC /* SceneDelegate.m */; };
-		2BD257CA2C2B7BC500215ACC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257C92C2B7BC500215ACC /* ViewController.m */; };
+		2BD257CA2C2B7BC500215ACC /* TestAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257C92C2B7BC500215ACC /* TestAController.m */; };
 		2BD257CF2C2B7BC600215ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD257CE2C2B7BC600215ACC /* Assets.xcassets */; };
 		2BD257D52C2B7BC700215ACC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257D42C2B7BC700215ACC /* main.m */; };
 		2BD257DF2C2B7BC700215ACC /* AppDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257DE2C2B7BC700215ACC /* AppDemoTests.m */; };
 		2BD257E92C2B7BC700215ACC /* AppDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257E82C2B7BC700215ACC /* AppDemoUITests.m */; };
 		2BD257EB2C2B7BC700215ACC /* AppDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257EA2C2B7BC700215ACC /* AppDemoUITestsLaunchTests.m */; };
-		2BD257FB2C2B945700215ACC /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257FA2C2B945700215ACC /* ViewController2.m */; };
-		2BD257FE2C2BAD9900215ACC /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257FD2C2BAD9900215ACC /* ViewController3.m */; };
+		2BD257FB2C2B945700215ACC /* TableListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257FA2C2B945700215ACC /* TableListController.m */; };
+		2BD257FE2C2BAD9900215ACC /* VideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257FD2C2BAD9900215ACC /* VideoController.m */; };
+		2BD258012C2C8F4600215ACC /* IntroductionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD258002C2C8F4600215ACC /* IntroductionController.m */; };
+		2BD258092C2C98AF00215ACC /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD258082C2C98AF00215ACC /* NormalTableViewCell.m */; };
+		2BD2580C2C2CD42E00215ACC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2580B2C2CD42E00215ACC /* WebViewController.m */; };
+		2BD258102C2CE68B00215ACC /* DeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2580F2C2CE68B00215ACC /* DeleteCellView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +46,8 @@
 		2BD257C32C2B7BC500215ACC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2BD257C52C2B7BC500215ACC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		2BD257C62C2B7BC500215ACC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		2BD257C82C2B7BC500215ACC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2BD257C92C2B7BC500215ACC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2BD257C82C2B7BC500215ACC /* TestAController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAController.h; sourceTree = "<group>"; };
+		2BD257C92C2B7BC500215ACC /* TestAController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAController.m; sourceTree = "<group>"; };
 		2BD257CE2C2B7BC600215ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BD257D32C2B7BC700215ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BD257D42C2B7BC700215ACC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,10 +56,18 @@
 		2BD257E42C2B7BC700215ACC /* AppDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD257E82C2B7BC700215ACC /* AppDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDemoUITests.m; sourceTree = "<group>"; };
 		2BD257EA2C2B7BC700215ACC /* AppDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
-		2BD257FA2C2B945700215ACC /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
-		2BD257FC2C2B946100215ACC /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
-		2BD257FD2C2BAD9900215ACC /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
-		2BD257FF2C2BADA700215ACC /* ViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		2BD257FA2C2B945700215ACC /* TableListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableListController.m; sourceTree = "<group>"; };
+		2BD257FC2C2B946100215ACC /* TableListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableListController.h; sourceTree = "<group>"; };
+		2BD257FD2C2BAD9900215ACC /* VideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoController.m; sourceTree = "<group>"; };
+		2BD257FF2C2BADA700215ACC /* VideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoController.h; sourceTree = "<group>"; };
+		2BD258002C2C8F4600215ACC /* IntroductionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroductionController.m; sourceTree = "<group>"; };
+		2BD258022C2C8F4E00215ACC /* IntroductionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroductionController.h; sourceTree = "<group>"; };
+		2BD258072C2C98AF00215ACC /* NormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalTableViewCell.h; sourceTree = "<group>"; };
+		2BD258082C2C98AF00215ACC /* NormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewCell.m; sourceTree = "<group>"; };
+		2BD2580B2C2CD42E00215ACC /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		2BD2580D2C2CD43500215ACC /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		2BD2580E2C2CE68B00215ACC /* DeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteCellView.h; sourceTree = "<group>"; };
+		2BD2580F2C2CE68B00215ACC /* DeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,19 +118,15 @@
 		2BD257C12C2B7BC500215ACC /* AppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2BD2580A2C2CCA1200215ACC /* Controllers */,
+				2BD258032C2C983B00215ACC /* Components */,
 				2BD257C22C2B7BC500215ACC /* AppDelegate.h */,
 				2BD257C32C2B7BC500215ACC /* AppDelegate.m */,
 				2BD257C52C2B7BC500215ACC /* SceneDelegate.h */,
 				2BD257C62C2B7BC500215ACC /* SceneDelegate.m */,
-				2BD257C82C2B7BC500215ACC /* ViewController.h */,
-				2BD257C92C2B7BC500215ACC /* ViewController.m */,
 				2BD257CE2C2B7BC600215ACC /* Assets.xcassets */,
 				2BD257D32C2B7BC700215ACC /* Info.plist */,
 				2BD257D42C2B7BC700215ACC /* main.m */,
-				2BD257FC2C2B946100215ACC /* ViewController2.h */,
-				2BD257FA2C2B945700215ACC /* ViewController2.m */,
-				2BD257FF2C2BADA700215ACC /* ViewController3.h */,
-				2BD257FD2C2BAD9900215ACC /* ViewController3.m */,
 			);
 			path = AppDemo;
 			sourceTree = "<group>";
@@ -138,6 +146,34 @@
 				2BD257EA2C2B7BC700215ACC /* AppDemoUITestsLaunchTests.m */,
 			);
 			path = AppDemoUITests;
+			sourceTree = "<group>";
+		};
+		2BD258032C2C983B00215ACC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2BD258072C2C98AF00215ACC /* NormalTableViewCell.h */,
+				2BD258082C2C98AF00215ACC /* NormalTableViewCell.m */,
+				2BD2580E2C2CE68B00215ACC /* DeleteCellView.h */,
+				2BD2580F2C2CE68B00215ACC /* DeleteCellView.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2BD2580A2C2CCA1200215ACC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BD257C82C2B7BC500215ACC /* TestAController.h */,
+				2BD257C92C2B7BC500215ACC /* TestAController.m */,
+				2BD257FC2C2B946100215ACC /* TableListController.h */,
+				2BD257FA2C2B945700215ACC /* TableListController.m */,
+				2BD257FF2C2BADA700215ACC /* VideoController.h */,
+				2BD257FD2C2BAD9900215ACC /* VideoController.m */,
+				2BD258022C2C8F4E00215ACC /* IntroductionController.h */,
+				2BD258002C2C8F4600215ACC /* IntroductionController.m */,
+				2BD2580D2C2CD43500215ACC /* WebViewController.h */,
+				2BD2580B2C2CD42E00215ACC /* WebViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,11 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD257CA2C2B7BC500215ACC /* ViewController.m in Sources */,
+				2BD257CA2C2B7BC500215ACC /* TestAController.m in Sources */,
 				2BD257C42C2B7BC500215ACC /* AppDelegate.m in Sources */,
-				2BD257FE2C2BAD9900215ACC /* ViewController3.m in Sources */,
-				2BD257FB2C2B945700215ACC /* ViewController2.m in Sources */,
+				2BD257FE2C2BAD9900215ACC /* VideoController.m in Sources */,
+				2BD257FB2C2B945700215ACC /* TableListController.m in Sources */,
+				2BD258092C2C98AF00215ACC /* NormalTableViewCell.m in Sources */,
+				2BD258102C2CE68B00215ACC /* DeleteCellView.m in Sources */,
+				2BD2580C2C2CD42E00215ACC /* WebViewController.m in Sources */,
 				2BD257D52C2B7BC700215ACC /* main.m in Sources */,
+				2BD258012C2C8F4600215ACC /* IntroductionController.m in Sources */,
 				2BD257C72C2B7BC500215ACC /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

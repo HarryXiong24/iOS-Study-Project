@@ -21,6 +21,7 @@
 
 - (void)testLaunch {
     XCUIApplication *app = [[XCUIApplication alloc] init];
+
     [app launch];
 
     // Insert steps here to perform after app launch but before taking a screenshot,
