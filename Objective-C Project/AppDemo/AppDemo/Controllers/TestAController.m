@@ -4,6 +4,7 @@
 //
 
 #import "TestAController.h"
+#import <Masonry/Masonry.h>
 
 @interface TestAController ()
 
@@ -17,44 +18,88 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
     self.view.backgroundColor = [UIColor whiteColor];
-
+    
+    // backgrounds
+    UIView *backgroudDiv = [[UIView alloc] init];
+    backgroudDiv.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:backgroudDiv];
+    
+    [backgroudDiv mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.size.mas_equalTo(CGSizeMake(300, 300));
+    }];
+    
+    // view1
     UIView *view = [[UIView alloc] init];
     view.backgroundColor = [UIColor redColor];
-    view.frame = CGRectMake(100, 100, 100, 100);
-    [self.view addSubview:view];
+    [backgroudDiv addSubview:view];
+    
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(backgroudDiv).offset(10);
+        make.left.equalTo(backgroudDiv).offset(10);
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+    }];
 
+    // view2
     UIView *view2 = [[UIView alloc] init];
     view2.backgroundColor = [UIColor greenColor];
-    view2.frame = CGRectMake(150, 150, 100, 100);
-    [self.view addSubview:view2];
+    [backgroudDiv addSubview:view2];
+    
+    [view2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(view.mas_left);
+        make.bottom.equalTo(backgroudDiv.mas_bottom).offset(-10);
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+    }];
 
+    // view3
     UIView *view3 = [[UIView alloc] init];
     view3.backgroundColor = [UIColor blueColor];
-    view3.frame = CGRectMake(300, 300, 100, 100);
-    [self.view addSubview:view3];
+    [backgroudDiv addSubview:view3];
+    
+    [view3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(backgroudDiv.mas_top).offset(10);
+        make.right.equalTo(backgroudDiv.mas_right).offset(-10);
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+    }];
 
+    // in-box label
     UILabel *titleInView3 = [[UILabel alloc] init];
     titleInView3.text = @"Long press me to show hidden text!";
-    titleInView3.frame = CGRectMake(0, 0, 100, 100);
     titleInView3.numberOfLines = 5;
     titleInView3.textColor = [UIColor whiteColor];
     [titleInView3 sizeToFit];
     [view3 addSubview:titleInView3];
+    
+    [titleInView3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(view3);
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+    }];
 
+    // hidden label
     self.label = [[UILabel alloc] init];
-    self.label.frame = CGRectMake(100, 300, 60, 30);
     self.label.text = @"Hello World";
     [self.label sizeToFit];
     [self.label setHidden:YES];
     [self.view addSubview:self.label];
+    
+    [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(backgroudDiv.mas_top).offset(-30);
+    }];
 
 
+    // view4
     UIView *view4 = [[UIView alloc] init];
     view4.backgroundColor = [UIColor yellowColor];
-    view4.frame = CGRectMake(100, 400, 100, 100);
-    [self.view addSubview:view4];
+    [backgroudDiv addSubview:view4];
+    
+    [view4 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(backgroudDiv.mas_right).offset(-10);
+        make.bottom.equalTo(backgroudDiv.mas_bottom).offset(-10);
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+    }];
+    
 
     self.alertController = [UIAlertController alertControllerWithTitle:@"My Alert"
                                                                message:@"This is an alert."
@@ -66,9 +111,6 @@
 
     [self.alertController addAction:defaultAction];
 
-
-    UITabBar *tabBar = [[UITabBar alloc] init];
-    [self.view addSubview:tabBar];
 
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushController)];
     [view2 addGestureRecognizer:tapGesture];
