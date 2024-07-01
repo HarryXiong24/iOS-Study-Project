@@ -16,15 +16,14 @@
     // Do any additional setup after loading the view.
         
     NSDictionary *titleAttributes = @{
-        NSForegroundColorAttributeName: [UIColor blueColor],
+        NSForegroundColorAttributeName: [UIColor blackColor],
         NSFontAttributeName: [UIFont boldSystemFontOfSize:24]
     };
     
     self.navigationBar.titleTextAttributes = titleAttributes;
     
-    self.navigationBar.backgroundColor = [UIColor lightGrayColor];
-    
-    self.navigationBar.tintColor = [UIColor whiteColor];
+//    self.navigationBar.backgroundColor = [UIColor colorWithRed:93.0/255.0 green:93.0/255.0 blue:93.0/255.0 alpha:1.0];
+
 }
 
 /*

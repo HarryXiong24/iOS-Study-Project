@@ -4,7 +4,8 @@
 //
 
 #import "SceneDelegate.h"
-#import "RootViewController.h"
+#import "View/NavigateViewController.h"
+#import "Controller/OverallViewController.h"
 
 @interface SceneDelegate ()
 
@@ -20,8 +21,17 @@
     
     self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     
-    RootViewController *rootController = [[RootViewController alloc] init];
-
+    UITabBarController *rootController = [[UITabBarController alloc] init];
+    UIFont *font = [UIFont systemFontOfSize: 14];
+    NSDictionary *attributes = @{NSFontAttributeName: font};
+    [[UITabBarItem appearance] setTitleTextAttributes:attributes forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:attributes forState:UIControlStateSelected];
+    
+    
+    UINavigationController *overallNavController = [[UINavigationController alloc] initWithRootViewController:[[OverallViewController alloc] init]];
+    
+    [rootController setViewControllers:@[overallNavController]];
+    
     self.window.rootViewController = rootController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
