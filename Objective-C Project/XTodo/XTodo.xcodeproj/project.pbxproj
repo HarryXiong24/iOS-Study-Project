@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0492997D15A6BAA1E50DAF0A /* Pods_XTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0621FDEF7973D74FDC4C66FB /* Pods_XTodo.framework */; };
 		175EB1232BDAF034994C5D22 /* Pods_XTodo_XTodoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6E4106116F3E3FBCC423B4 /* Pods_XTodo_XTodoUITests.framework */; };
+		2B05205C2C33805B00263B1A /* TodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B05205B2C33805B00263B1A /* TodoItem.m */; };
 		2B6B149A2C2F6AEC00A6C5B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B14992C2F6AEC00A6C5B8 /* AppDelegate.m */; };
 		2B6B149D2C2F6AEC00A6C5B8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B149C2C2F6AEC00A6C5B8 /* SceneDelegate.m */; };
 		2B6B14A52C2F6AED00A6C5B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B6B14A42C2F6AED00A6C5B8 /* Assets.xcassets */; };
@@ -17,7 +18,8 @@
 		2B6B14BF2C2F6AEE00A6C5B8 /* XTodoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B14BE2C2F6AEE00A6C5B8 /* XTodoUITests.m */; };
 		2B6B14C12C2F6AEE00A6C5B8 /* XTodoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B14C02C2F6AEE00A6C5B8 /* XTodoUITestsLaunchTests.m */; };
 		2B6B14D32C2F6F3200A6C5B8 /* OverallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B14D22C2F6F3200A6C5B8 /* OverallViewController.m */; };
-		2B6B14D72C2F828800A6C5B8 /* NavigateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B14D62C2F828800A6C5B8 /* NavigateViewController.m */; };
+		2B6B18A72C33599100A6C5B8 /* CreateTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B18A62C33599100A6C5B8 /* CreateTodoViewController.m */; };
+		A4671D942C33CB07002B082B /* StoreOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4671D932C33CB07002B082B /* StoreOperation.m */; };
 		E856FB6FC1EA78B992AF8196 /* Pods_XTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5AED917D9F67D52C0E3229 /* Pods_XTodoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		0621FDEF7973D74FDC4C66FB /* Pods_XTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F6E4106116F3E3FBCC423B4 /* Pods_XTodo_XTodoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTodo_XTodoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDBE3C377D0987202AB5E7E /* Pods-XTodo-XTodoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTodo-XTodoUITests.release.xcconfig"; path = "Target Support Files/Pods-XTodo-XTodoUITests/Pods-XTodo-XTodoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B0520592C337FC300263B1A /* TodoItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoItem.h; sourceTree = "<group>"; };
+		2B05205B2C33805B00263B1A /* TodoItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoItem.m; sourceTree = "<group>"; };
 		2B6B14952C2F6AEC00A6C5B8 /* XTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6B14982C2F6AEC00A6C5B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B6B14992C2F6AEC00A6C5B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,12 +61,14 @@
 		2B6B14C02C2F6AEE00A6C5B8 /* XTodoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTodoUITestsLaunchTests.m; sourceTree = "<group>"; };
 		2B6B14D12C2F6F3200A6C5B8 /* OverallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverallViewController.h; sourceTree = "<group>"; };
 		2B6B14D22C2F6F3200A6C5B8 /* OverallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverallViewController.m; sourceTree = "<group>"; };
-		2B6B14D52C2F828800A6C5B8 /* NavigateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigateViewController.h; sourceTree = "<group>"; };
-		2B6B14D62C2F828800A6C5B8 /* NavigateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigateViewController.m; sourceTree = "<group>"; };
+		2B6B18A52C33599100A6C5B8 /* CreateTodoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateTodoViewController.h; sourceTree = "<group>"; };
+		2B6B18A62C33599100A6C5B8 /* CreateTodoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateTodoViewController.m; sourceTree = "<group>"; };
 		3C5AED917D9F67D52C0E3229 /* Pods_XTodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A28AE135BDA0BB284D3EF4E /* Pods-XTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTodo.release.xcconfig"; path = "Target Support Files/Pods-XTodo/Pods-XTodo.release.xcconfig"; sourceTree = "<group>"; };
 		7D7F92943F34F49D330B4F61 /* Pods-XTodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTodoTests.debug.xcconfig"; path = "Target Support Files/Pods-XTodoTests/Pods-XTodoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		85666C03E70F48A7A2B7CC3D /* Pods-XTodoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTodoTests.release.xcconfig"; path = "Target Support Files/Pods-XTodoTests/Pods-XTodoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4671D932C33CB07002B082B /* StoreOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreOperation.m; sourceTree = "<group>"; };
+		A4671D952C33CB13002B082B /* StoreOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreOperation.h; sourceTree = "<group>"; };
 		A8EDAB2B1FC38A9116A37ABB /* Pods-XTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTodo.debug.xcconfig"; path = "Target Support Files/Pods-XTodo/Pods-XTodo.debug.xcconfig"; sourceTree = "<group>"; };
 		CA4673E89870243B45B440B9 /* Pods-XTodo-XTodoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTodo-XTodoUITests.debug.xcconfig"; path = "Target Support Files/Pods-XTodo-XTodoUITests/Pods-XTodo-XTodoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,9 +126,9 @@
 		2B6B14972C2F6AEC00A6C5B8 /* XTodo */ = {
 			isa = PBXGroup;
 			children = (
-				2B6B14CF2C2F6B4800A6C5B8 /* View */,
-				2B6B14CE2C2F6B3800A6C5B8 /* Model */,
-				2B6B14CD2C2F6B2B00A6C5B8 /* Controller */,
+				2B6B18A82C337DAA00A6C5B8 /* Models */,
+				2B6B14CF2C2F6B4800A6C5B8 /* Views */,
+				2B6B14CD2C2F6B2B00A6C5B8 /* Controllers */,
 				2B6B14982C2F6AEC00A6C5B8 /* AppDelegate.h */,
 				2B6B14992C2F6AEC00A6C5B8 /* AppDelegate.m */,
 				2B6B149B2C2F6AEC00A6C5B8 /* SceneDelegate.h */,
@@ -151,29 +157,33 @@
 			path = XTodoUITests;
 			sourceTree = "<group>";
 		};
-		2B6B14CD2C2F6B2B00A6C5B8 /* Controller */ = {
+		2B6B14CD2C2F6B2B00A6C5B8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				2B6B14D12C2F6F3200A6C5B8 /* OverallViewController.h */,
 				2B6B14D22C2F6F3200A6C5B8 /* OverallViewController.m */,
+				2B6B18A52C33599100A6C5B8 /* CreateTodoViewController.h */,
+				2B6B18A62C33599100A6C5B8 /* CreateTodoViewController.m */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		2B6B14CE2C2F6B3800A6C5B8 /* Model */ = {
+		2B6B14CF2C2F6B4800A6C5B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		2B6B14CF2C2F6B4800A6C5B8 /* View */ = {
+		2B6B18A82C337DAA00A6C5B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2B6B14D52C2F828800A6C5B8 /* NavigateViewController.h */,
-				2B6B14D62C2F828800A6C5B8 /* NavigateViewController.m */,
+				2B0520592C337FC300263B1A /* TodoItem.h */,
+				2B05205B2C33805B00263B1A /* TodoItem.m */,
+				A4671D952C33CB13002B082B /* StoreOperation.h */,
+				A4671D932C33CB07002B082B /* StoreOperation.m */,
 			);
-			path = View;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		354B093F8BDF9EFCC957CC8A /* Pods */ = {
@@ -435,10 +445,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B6B14D72C2F828800A6C5B8 /* NavigateViewController.m in Sources */,
+				2B6B18A72C33599100A6C5B8 /* CreateTodoViewController.m in Sources */,
 				2B6B149A2C2F6AEC00A6C5B8 /* AppDelegate.m in Sources */,
 				2B6B14D32C2F6F3200A6C5B8 /* OverallViewController.m in Sources */,
 				2B6B14AB2C2F6AED00A6C5B8 /* main.m in Sources */,
+				2B05205C2C33805B00263B1A /* TodoItem.m in Sources */,
+				A4671D942C33CB07002B082B /* StoreOperation.m in Sources */,
 				2B6B149D2C2F6AEC00A6C5B8 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

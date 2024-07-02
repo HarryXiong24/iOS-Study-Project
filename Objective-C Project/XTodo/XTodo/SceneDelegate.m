@@ -4,8 +4,8 @@
 //
 
 #import "SceneDelegate.h"
-#import "View/NavigateViewController.h"
-#import "Controller/OverallViewController.h"
+#import "Controllers/OverallViewController.h"
+#import "Models/StoreOperation.h"
 
 @interface SceneDelegate ()
 
@@ -21,18 +21,23 @@
     
     self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     
-    UITabBarController *rootController = [[UITabBarController alloc] init];
+    StoreOperation *dataOperation = [[StoreOperation alloc] init];
+    [dataOperation resetTodoList];
+    
+    UITabBarController *rootVC = [[UITabBarController alloc] init];
     UIFont *font = [UIFont systemFontOfSize: 14];
     NSDictionary *attributes = @{NSFontAttributeName: font};
     [[UITabBarItem appearance] setTitleTextAttributes:attributes forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:attributes forState:UIControlStateSelected];
     
     
-    UINavigationController *overallNavController = [[UINavigationController alloc] initWithRootViewController:[[OverallViewController alloc] init]];
+    OverallViewController *overallVC = [[OverallViewController alloc] init];
+    UINavigationController *overallNVC = [[UINavigationController alloc] initWithRootViewController:overallVC];
+    overallNVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Overall" image:[UIImage systemImageNamed:@"list.star"] selectedImage:[UIImage systemImageNamed:@"list.star.fill"]];
     
-    [rootController setViewControllers:@[overallNavController]];
+    [rootVC setViewControllers:@[overallNVC]];
     
-    self.window.rootViewController = rootController;
+    self.window.rootViewController = rootVC;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 }
