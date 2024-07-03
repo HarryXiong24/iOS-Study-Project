@@ -3,14 +3,12 @@
 //  XTodo
 //
 
-#import "CreateTodoViewController.h"
-#import <Masonry/Masonry.h>
-#import "../Models/TodoItem.h"
-#import "../Models/StoreOperation.h"
+#import "EditTodoViewController.h"
 
 
-@interface CreateTodoViewController ()
+@interface EditTodoViewController ()
 
+@property (nonatomic, readwrite) int no;
 @property (nonatomic, strong) UITextField *titleTextField;
 @property (nonatomic, strong) UITextField *contentTextField;
 @property (nonatomic, strong) UIDatePicker *datePicker;
@@ -18,7 +16,7 @@
 
 @end
 
-@implementation CreateTodoViewController
+@implementation EditTodoViewController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -71,9 +69,9 @@
 	         make.top.equalTo(self.contentTextField.mas_bottom).offset(10);
 	         make.left.equalTo(self.view.mas_safeAreaLayoutGuideLeft).offset(20);
 	 }];
-    
-    // delegate
-    self.operation = [[StoreOperation alloc] init];
+
+	// delegate
+	self.operation = [[StoreOperation alloc] init];
 
 }
 
@@ -87,24 +85,64 @@
 }
 
 - (void) doneCreate {
-	NSLog(@"Done button tapped!");
-
 	NSString *title = self.titleTextField.text;
 	NSString *content = self.contentTextField.text;
 	NSDate *date = self.datePicker.date;
 
-//	NSLog(@"Title: %@", title);
-//	NSLog(@"Content: %@", content);
-//	NSLog(@"Date: %@", date);
+	// Validate inputs
+	if (title.length == 0) {
+		[self showAlertWithTitle:@"Missing Title" message:@"Please enter a title for your Todo item."];
+		return;
+	}
 
+	if (content.length == 0) {
+		[self showAlertWithTitle:@"Missing Content" message:@"Please enter some content for your Todo item."];
+		return;
+	}
+
+	if (date == nil) {
+		[self showAlertWithTitle:@"Missing Date" message:@"Please select a date for your Todo item."];
+		return;
+	}
+    
+    if (self.isEdit && self.no) {
+        [self.operation removeItemWithNo:(int)self.no];
+    }
 	// Save date to TodoItem objects
-    [self.operation savedTodoListWithTitle:title content:content date:date];
-	
+	[self.operation savedTodoListWithTitle:title content:content date:date];
+
 	// if I use NavigationBar
 	//	[self.navigationController popViewControllerAnimated:YES];
 
 	// normal way
 	[self dismissViewControllerAnimated: YES completion: nil];
+}
+
+- (void) update:(TodoItem *)todoItem {
+
+	if (!todoItem.no || !todoItem.title || !todoItem.content || !todoItem.date) {
+		[self showAlertWithTitle:@"Missing Data" message:@"Error!"];
+		return;
+	}
+
+	dispatch_async(dispatch_get_main_queue(), ^{
+        self.no = todoItem.no;
+        self.navigationItem.title = @"Update";
+		self.titleTextField.text = todoItem.title;
+		self.contentTextField.text = todoItem.content;
+		self.datePicker.date = todoItem.date;
+		NSLog(@"Done update todoItem");
+	});
+
+}
+
+- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message {
+	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title
+	                                      message:message
+	                                      preferredStyle:UIAlertControllerStyleAlert];
+	UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+	[alertController addAction:okAction];
+	[self presentViewController:alertController animated:YES completion:nil];
 }
 
 @end

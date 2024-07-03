@@ -17,8 +17,12 @@
 		2B6B14B52C2F6AEE00A6C5B8 /* XTodoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B14B42C2F6AEE00A6C5B8 /* XTodoTests.m */; };
 		2B6B14BF2C2F6AEE00A6C5B8 /* XTodoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B14BE2C2F6AEE00A6C5B8 /* XTodoUITests.m */; };
 		2B6B14C12C2F6AEE00A6C5B8 /* XTodoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B14C02C2F6AEE00A6C5B8 /* XTodoUITestsLaunchTests.m */; };
-		2B6B14D32C2F6F3200A6C5B8 /* OverallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B14D22C2F6F3200A6C5B8 /* OverallViewController.m */; };
-		2B6B18A72C33599100A6C5B8 /* CreateTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B18A62C33599100A6C5B8 /* CreateTodoViewController.m */; };
+		2B6B14D32C2F6F3200A6C5B8 /* TasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B14D22C2F6F3200A6C5B8 /* TasksViewController.m */; };
+		2B6B18A72C33599100A6C5B8 /* EditTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B18A62C33599100A6C5B8 /* EditTodoViewController.m */; };
+		2B95D1D32C349496002EDE0B /* TodoItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B95D1D22C349496002EDE0B /* TodoItemViewCell.m */; };
+		2B95D1D62C34AE38002EDE0B /* CompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B95D1D52C34AE38002EDE0B /* CompletedViewController.m */; };
+		2B95D1D92C34B636002EDE0B /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B95D1D82C34B636002EDE0B /* DetailTableViewCell.m */; };
+		2B95D1DC2C34CE6C002EDE0B /* CompletedItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B95D1DB2C34CE6C002EDE0B /* CompletedItemViewCell.m */; };
 		A4671D942C33CB07002B082B /* StoreOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4671D932C33CB07002B082B /* StoreOperation.m */; };
 		E856FB6FC1EA78B992AF8196 /* Pods_XTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5AED917D9F67D52C0E3229 /* Pods_XTodoTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,10 +63,18 @@
 		2B6B14BA2C2F6AEE00A6C5B8 /* XTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6B14BE2C2F6AEE00A6C5B8 /* XTodoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTodoUITests.m; sourceTree = "<group>"; };
 		2B6B14C02C2F6AEE00A6C5B8 /* XTodoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTodoUITestsLaunchTests.m; sourceTree = "<group>"; };
-		2B6B14D12C2F6F3200A6C5B8 /* OverallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverallViewController.h; sourceTree = "<group>"; };
-		2B6B14D22C2F6F3200A6C5B8 /* OverallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverallViewController.m; sourceTree = "<group>"; };
-		2B6B18A52C33599100A6C5B8 /* CreateTodoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateTodoViewController.h; sourceTree = "<group>"; };
-		2B6B18A62C33599100A6C5B8 /* CreateTodoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateTodoViewController.m; sourceTree = "<group>"; };
+		2B6B14D12C2F6F3200A6C5B8 /* TasksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TasksViewController.h; sourceTree = "<group>"; };
+		2B6B14D22C2F6F3200A6C5B8 /* TasksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TasksViewController.m; sourceTree = "<group>"; };
+		2B6B18A52C33599100A6C5B8 /* EditTodoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditTodoViewController.h; sourceTree = "<group>"; };
+		2B6B18A62C33599100A6C5B8 /* EditTodoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditTodoViewController.m; sourceTree = "<group>"; };
+		2B95D1D12C349496002EDE0B /* TodoItemViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoItemViewCell.h; sourceTree = "<group>"; };
+		2B95D1D22C349496002EDE0B /* TodoItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoItemViewCell.m; sourceTree = "<group>"; };
+		2B95D1D42C34AE38002EDE0B /* CompletedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompletedViewController.h; sourceTree = "<group>"; };
+		2B95D1D52C34AE38002EDE0B /* CompletedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompletedViewController.m; sourceTree = "<group>"; };
+		2B95D1D72C34B636002EDE0B /* DetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		2B95D1D82C34B636002EDE0B /* DetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
+		2B95D1DA2C34CE6C002EDE0B /* CompletedItemViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompletedItemViewCell.h; sourceTree = "<group>"; };
+		2B95D1DB2C34CE6C002EDE0B /* CompletedItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompletedItemViewCell.m; sourceTree = "<group>"; };
 		3C5AED917D9F67D52C0E3229 /* Pods_XTodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A28AE135BDA0BB284D3EF4E /* Pods-XTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTodo.release.xcconfig"; path = "Target Support Files/Pods-XTodo/Pods-XTodo.release.xcconfig"; sourceTree = "<group>"; };
 		7D7F92943F34F49D330B4F61 /* Pods-XTodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTodoTests.debug.xcconfig"; path = "Target Support Files/Pods-XTodoTests/Pods-XTodoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,10 +172,14 @@
 		2B6B14CD2C2F6B2B00A6C5B8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2B6B14D12C2F6F3200A6C5B8 /* OverallViewController.h */,
-				2B6B14D22C2F6F3200A6C5B8 /* OverallViewController.m */,
-				2B6B18A52C33599100A6C5B8 /* CreateTodoViewController.h */,
-				2B6B18A62C33599100A6C5B8 /* CreateTodoViewController.m */,
+				2B6B14D12C2F6F3200A6C5B8 /* TasksViewController.h */,
+				2B6B14D22C2F6F3200A6C5B8 /* TasksViewController.m */,
+				2B6B18A52C33599100A6C5B8 /* EditTodoViewController.h */,
+				2B6B18A62C33599100A6C5B8 /* EditTodoViewController.m */,
+				2B95D1D42C34AE38002EDE0B /* CompletedViewController.h */,
+				2B95D1D52C34AE38002EDE0B /* CompletedViewController.m */,
+				2B95D1D72C34B636002EDE0B /* DetailTableViewCell.h */,
+				2B95D1D82C34B636002EDE0B /* DetailTableViewCell.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -171,6 +187,10 @@
 		2B6B14CF2C2F6B4800A6C5B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2B95D1D12C349496002EDE0B /* TodoItemViewCell.h */,
+				2B95D1D22C349496002EDE0B /* TodoItemViewCell.m */,
+				2B95D1DA2C34CE6C002EDE0B /* CompletedItemViewCell.h */,
+				2B95D1DB2C34CE6C002EDE0B /* CompletedItemViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -445,12 +465,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B6B18A72C33599100A6C5B8 /* CreateTodoViewController.m in Sources */,
+				2B6B18A72C33599100A6C5B8 /* EditTodoViewController.m in Sources */,
 				2B6B149A2C2F6AEC00A6C5B8 /* AppDelegate.m in Sources */,
-				2B6B14D32C2F6F3200A6C5B8 /* OverallViewController.m in Sources */,
+				2B6B14D32C2F6F3200A6C5B8 /* TasksViewController.m in Sources */,
 				2B6B14AB2C2F6AED00A6C5B8 /* main.m in Sources */,
 				2B05205C2C33805B00263B1A /* TodoItem.m in Sources */,
+				2B95D1D62C34AE38002EDE0B /* CompletedViewController.m in Sources */,
+				2B95D1D92C34B636002EDE0B /* DetailTableViewCell.m in Sources */,
+				2B95D1D32C349496002EDE0B /* TodoItemViewCell.m in Sources */,
 				A4671D942C33CB07002B082B /* StoreOperation.m in Sources */,
+				2B95D1DC2C34CE6C002EDE0B /* CompletedItemViewCell.m in Sources */,
 				2B6B149D2C2F6AEC00A6C5B8 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,7 +640,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XTodo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchImage;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -644,7 +668,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XTodo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchImage;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
