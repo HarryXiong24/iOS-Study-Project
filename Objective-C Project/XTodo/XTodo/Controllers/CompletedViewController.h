@@ -7,7 +7,7 @@
 #import "DetailTableViewCell.h"
 #import "../Models/TodoItem.h"
 #import "../Models/StoreOperation.h"
-#import "../Views/CompletedItemViewCell.h"
+#import "../Views/TodoItemViewCell.h"
 #import <Masonry/Masonry.h>
 
 NS_ASSUME_NONNULL_BEGIN

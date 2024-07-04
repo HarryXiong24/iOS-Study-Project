@@ -10,6 +10,9 @@
 
 @interface SceneDelegate ()
 
+@property (nonatomic, strong) UITabBarController *rootVC;
+@property (nonatomic, strong) UIView *lineView;
+
 @end
 
 @implementation SceneDelegate
@@ -22,7 +25,7 @@
 
     self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
 
-    UITabBarController *rootVC = [[UITabBarController alloc] init];
+    self.rootVC = [[UITabBarController alloc] init];
     UIFont *font = [UIFont systemFontOfSize:14];
     NSDictionary *attributes = @{
             NSFontAttributeName: font
@@ -30,10 +33,15 @@
     [[UITabBarItem appearance] setTitleTextAttributes:attributes forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:attributes forState:UIControlStateSelected];
 
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, -16, CGRectGetWidth(rootVC.tabBar.frame), 1)];
-    lineView.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.5];
-    [rootVC.tabBar addSubview:lineView];
+    self.lineView = [[UIView alloc] initWithFrame:CGRectMake(0, -16, CGRectGetWidth(self.rootVC.tabBar.bounds), 1)];
+    self.lineView.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.5];
+    [self.rootVC.tabBar addSubview:self.lineView];
 
+    // Add an observer for screen rotation
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(updateLineViewFrame)
+                                                 name:UIDeviceOrientationDidChangeNotification
+                                               object:nil];
 
     TasksViewController *overallVC = [[TasksViewController alloc] init];
     UINavigationController *overallNVC = [[UINavigationController alloc] initWithRootViewController:overallVC];
@@ -43,11 +51,20 @@
     UINavigationController *completedNVC = [[UINavigationController alloc] initWithRootViewController:completedVC];
     completedVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Completed" image:[UIImage systemImageNamed:@"calendar.badge.checkmark"] selectedImage:[UIImage systemImageNamed:@"calendar.badge.checkmarkfill"]];
 
-    [rootVC setViewControllers:@[overallNVC, completedNVC]];
+    [self.rootVC setViewControllers:@[overallNVC, completedNVC]];
 
-    self.window.rootViewController = rootVC;
+    self.window.rootViewController = self.rootVC;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+}
+
+- (void)updateLineViewFrame {
+    // Adjust the frame of lineView when the screen rotates
+    dispatch_async(dispatch_get_main_queue(), ^{
+        CGRect newFrame = self.lineView.frame;
+        newFrame.size.width = CGRectGetWidth(self.rootVC.tabBar.bounds);
+        self.lineView.frame = newFrame;
+    });
 }
 
 - (void)sceneDidDisconnect:(UIScene *)scene {
@@ -55,6 +72,11 @@
     // This occurs shortly after the scene enters the background, or when its session is discarded.
     // Release any resources associated with this scene that can be re-created the next time the scene connects.
     // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
+
+    // Remove observer
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIDeviceOrientationDidChangeNotification
+                                                  object:nil];
 }
 
 - (void)sceneDidBecomeActive:(UIScene *)scene {

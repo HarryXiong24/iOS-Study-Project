@@ -34,6 +34,12 @@
 	// todo list
 	self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
 	[self.view addSubview:self.tableView];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(self.view.mas_height);
+        make.left.equalTo(self.view.mas_left).offset(10);
+        make.right.equalTo(self.view.mas_right).offset(-10);
+    }];
 
 	self.tableView.dataSource = self;
 	self.tableView.delegate = self;
@@ -45,18 +51,19 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CompletedItemViewCell *cell = [[CompletedItemViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
+    TodoItemViewCell *cell = [[TodoItemViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
     
-    cell.delegate = self;
+//    cell.delegate = self;
+    cell.completedDelegate = self;
 
 	TodoItem *item = [self.completedList objectAtIndex:indexPath.row];
 
-	[cell layoutTableViewCell:item];
+	[cell layoutTableViewCell:item isSelected:true];
 
 	return cell;
 }
 
-- (void)completedItemViewCell:(CompletedItemViewCell *)cell didTapCheckbox:(UIButton *)checkbox isSelected:(BOOL)selected {
+- (void)completedItemViewCell:(TodoItemViewCell *)cell didTapCheckbox:(UIButton *)checkbox isSelected:(BOOL)selected {
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
     if (indexPath && !selected) {
         TodoItem *todoItem = self.completedList[indexPath.row];

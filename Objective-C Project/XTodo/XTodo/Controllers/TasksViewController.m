@@ -39,8 +39,14 @@
 	self.navigationItem.rightBarButtonItem = rightButton;
 
 	// todo list
-	self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+	self.tableView = [[UITableView alloc] init];
 	[self.view addSubview:self.tableView];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(self.view.mas_height);
+        make.left.equalTo(self.view.mas_left).offset(10);
+        make.right.equalTo(self.view.mas_right).offset(-10);
+    }];
 
 	self.tableView.dataSource = self;
 	self.tableView.delegate = self;
@@ -54,11 +60,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TodoItemViewCell *cell = [[TodoItemViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
     
-    cell.delegate = self;
+    cell.todoDelegate = self;
 
 	TodoItem *item = [self.todoList objectAtIndex:indexPath.row];
 
-	[cell layoutTableViewCell:item];
+	[cell layoutTableViewCell:item isSelected:false];
 
 	return cell;
 }

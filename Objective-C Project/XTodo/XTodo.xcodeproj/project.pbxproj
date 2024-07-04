@@ -22,7 +22,6 @@
 		2B95D1D32C349496002EDE0B /* TodoItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B95D1D22C349496002EDE0B /* TodoItemViewCell.m */; };
 		2B95D1D62C34AE38002EDE0B /* CompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B95D1D52C34AE38002EDE0B /* CompletedViewController.m */; };
 		2B95D1D92C34B636002EDE0B /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B95D1D82C34B636002EDE0B /* DetailTableViewCell.m */; };
-		2B95D1DC2C34CE6C002EDE0B /* CompletedItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B95D1DB2C34CE6C002EDE0B /* CompletedItemViewCell.m */; };
 		A4671D942C33CB07002B082B /* StoreOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4671D932C33CB07002B082B /* StoreOperation.m */; };
 		E856FB6FC1EA78B992AF8196 /* Pods_XTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5AED917D9F67D52C0E3229 /* Pods_XTodoTests.framework */; };
 /* End PBXBuildFile section */
@@ -73,8 +72,6 @@
 		2B95D1D52C34AE38002EDE0B /* CompletedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompletedViewController.m; sourceTree = "<group>"; };
 		2B95D1D72C34B636002EDE0B /* DetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
 		2B95D1D82C34B636002EDE0B /* DetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
-		2B95D1DA2C34CE6C002EDE0B /* CompletedItemViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompletedItemViewCell.h; sourceTree = "<group>"; };
-		2B95D1DB2C34CE6C002EDE0B /* CompletedItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompletedItemViewCell.m; sourceTree = "<group>"; };
 		3C5AED917D9F67D52C0E3229 /* Pods_XTodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A28AE135BDA0BB284D3EF4E /* Pods-XTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTodo.release.xcconfig"; path = "Target Support Files/Pods-XTodo/Pods-XTodo.release.xcconfig"; sourceTree = "<group>"; };
 		7D7F92943F34F49D330B4F61 /* Pods-XTodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTodoTests.debug.xcconfig"; path = "Target Support Files/Pods-XTodoTests/Pods-XTodoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,8 +186,6 @@
 			children = (
 				2B95D1D12C349496002EDE0B /* TodoItemViewCell.h */,
 				2B95D1D22C349496002EDE0B /* TodoItemViewCell.m */,
-				2B95D1DA2C34CE6C002EDE0B /* CompletedItemViewCell.h */,
-				2B95D1DB2C34CE6C002EDE0B /* CompletedItemViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -474,7 +469,6 @@
 				2B95D1D92C34B636002EDE0B /* DetailTableViewCell.m in Sources */,
 				2B95D1D32C349496002EDE0B /* TodoItemViewCell.m in Sources */,
 				A4671D942C33CB07002B082B /* StoreOperation.m in Sources */,
-				2B95D1DC2C34CE6C002EDE0B /* CompletedItemViewCell.m in Sources */,
 				2B6B149D2C2F6AEC00A6C5B8 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

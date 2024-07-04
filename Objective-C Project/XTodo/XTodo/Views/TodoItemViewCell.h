@@ -11,12 +11,14 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol TodoItemViewCellDelegate;
+@protocol CompletedItemViewCellDelegate;
 
 @interface TodoItemViewCell : UITableViewCell
 
-@property (nonatomic, weak) id<TodoItemViewCellDelegate> delegate;
+@property (nonatomic, weak) id<TodoItemViewCellDelegate> todoDelegate;
+@property (nonatomic, weak) id<CompletedItemViewCellDelegate> completedDelegate;
 
-- (void)layoutTableViewCell:(TodoItem *)todoitem;
+- (void)layoutTableViewCell:(TodoItem *)todoItem isSelected:(BOOL)isSelected;
 - (void)checkboxTapped:(UIButton *)sender;
 
 @end
@@ -24,6 +26,12 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol TodoItemViewCellDelegate <NSObject>
 
 - (void)todoItemViewCell:(TodoItemViewCell *)cell didTapCheckbox:(UIButton *)checkbox isSelected:(BOOL)selected;
+
+@end
+
+@protocol CompletedItemViewCellDelegate <NSObject>
+
+- (void)completedItemViewCell:(TodoItemViewCell *)cell didTapCheckbox:(UIButton *)checkbox isSelected:(BOOL)selected;
 
 @end
 

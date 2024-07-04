@@ -90,12 +90,12 @@
 	NSDate *date = self.datePicker.date;
 
 	// Validate inputs
-	if (title.length == 0) {
+	if (title.length == 0 || [[title stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] == 0) {
 		[self showAlertWithTitle:@"Missing Title" message:@"Please enter a title for your Todo item."];
 		return;
 	}
 
-	if (content.length == 0) {
+	if (content.length == 0 || [[content stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] == 0) {
 		[self showAlertWithTitle:@"Missing Content" message:@"Please enter some content for your Todo item."];
 		return;
 	}
