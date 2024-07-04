@@ -77,7 +77,10 @@
     }
 
     // Create a new TodoItem
-    int newNo = (int)(todoItems.count + 1); // Generate a new 'no' based on the count
+    NSTimeInterval timeInterval = [date timeIntervalSince1970];
+    // 将 NSTimeInterval 转换为 NSInteger（整数类型）
+    NSInteger timeStamp = (NSInteger)timeInterval;
+    int newNo = (int)(timeStamp); // Generate a new 'no' based on the count
     TodoItem *newItem = [[TodoItem alloc] initWithNo:newNo title:title content:content date:date];
 
     // Add the new item to the array
@@ -117,7 +120,10 @@
     }
 
     // Create a new TodoItem
-    int newNo = (int)(todoItems.count + 1); // Generate a new 'no' based on the count
+    NSTimeInterval timeInterval = [date timeIntervalSince1970];
+    // 将 NSTimeInterval 转换为 NSInteger（整数类型）
+    NSInteger timeStamp = (NSInteger)timeInterval;
+    int newNo = (int)(timeStamp); // Generate a new 'no' based on the count
     TodoItem *newItem = [[TodoItem alloc] initWithNo:newNo title:title content:content date:date];
 
     // Add the new item to the array
