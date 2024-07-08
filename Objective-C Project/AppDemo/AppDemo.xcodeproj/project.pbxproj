@@ -25,6 +25,8 @@
 		2BD2580C2C2CD42E00215ACC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2580B2C2CD42E00215ACC /* WebViewController.m */; };
 		2BD258102C2CE68B00215ACC /* DeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2580F2C2CE68B00215ACC /* DeleteCellView.m */; };
 		8DE1F998B08C52688FD1B0CC /* Pods_AppDemo_AppDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780D23C5BCB0BED976F50BB2 /* Pods_AppDemo_AppDemoUITests.framework */; };
+		A451186F2C3B546F00BCFB00 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = A451186E2C3B546F00BCFB00 /* Mediator.m */; };
+		A45118732C3B5BAA00BCFB00 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45118722C3B5BAA00BCFB00 /* DetailViewController.m */; };
 		A9A1AA91EB33B057FC1F33BE /* Pods_AppDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D099C94DDDA379BF00B12765 /* Pods_AppDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,10 @@
 		780D23C5BCB0BED976F50BB2 /* Pods_AppDemo_AppDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppDemo_AppDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		817221EF55FE18221B1A3DF1 /* Pods-AppDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppDemo/Pods-AppDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		869E74420B698701C2EE54CA /* Pods-AppDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AppDemoTests/Pods-AppDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A451186E2C3B546F00BCFB00 /* Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		A45118702C3B547A00BCFB00 /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		A45118712C3B5BAA00BCFB00 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A45118722C3B5BAA00BCFB00 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		C797219E915625B86D590722 /* Pods-AppDemo-AppDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemo-AppDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppDemo-AppDemoUITests/Pods-AppDemo-AppDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D099C94DDDA379BF00B12765 /* Pods_AppDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C25B605A96B4AFF8F85C4E /* Pods-AppDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemo.release.xcconfig"; path = "Target Support Files/Pods-AppDemo/Pods-AppDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +140,8 @@
 			children = (
 				2B6B14432C2DE3E500A6C5B8 /* ListLoader.h */,
 				2B6B14442C2DE3E500A6C5B8 /* ListLoader.m */,
+				A45118702C3B547A00BCFB00 /* Mediator.h */,
+				A451186E2C3B546F00BCFB00 /* Mediator.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -211,6 +219,8 @@
 				2BD258082C2C98AF00215ACC /* NormalTableViewCell.m */,
 				2BD2580E2C2CE68B00215ACC /* DeleteCellView.h */,
 				2BD2580F2C2CE68B00215ACC /* DeleteCellView.m */,
+				A45118712C3B5BAA00BCFB00 /* DetailViewController.h */,
+				A45118722C3B5BAA00BCFB00 /* DetailViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -481,6 +491,7 @@
 			files = (
 				2B6B144A2C2E0B0000A6C5B8 /* Weather.m in Sources */,
 				2BD257CA2C2B7BC500215ACC /* TestAController.m in Sources */,
+				A451186F2C3B546F00BCFB00 /* Mediator.m in Sources */,
 				2BD257C42C2B7BC500215ACC /* AppDelegate.m in Sources */,
 				2BD257FE2C2BAD9900215ACC /* VideoController.m in Sources */,
 				2B6B14452C2DE3E500A6C5B8 /* ListLoader.m in Sources */,
@@ -491,6 +502,7 @@
 				2BD257D52C2B7BC700215ACC /* main.m in Sources */,
 				2BD258012C2C8F4600215ACC /* IntroductionController.m in Sources */,
 				2BD257C72C2B7BC500215ACC /* SceneDelegate.m in Sources */,
+				A45118732C3B5BAA00BCFB00 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
