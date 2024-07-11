@@ -9,6 +9,8 @@
 #import "Controllers/VideoController.h"
 #import "Controllers/WebViewController.h"
 #import "SceneDelegate.h"
+#import "Utils/Location.h"
+#import "Utils/Notification.h"
 
 @interface SceneDelegate () <UITabBarControllerDelegate>
 
@@ -44,6 +46,8 @@
 
     self.window.rootViewController = navigationController;
     self.window.backgroundColor = [UIColor whiteColor];
+    [[Location locationManager] checkLocationAuthorization];
+    [[Notification notificationManager] checkNotificationAuthorization];
     [self.window makeKeyAndVisible];
 }
 

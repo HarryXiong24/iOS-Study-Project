@@ -32,4 +32,25 @@
 	// Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
+#pragma mark - Push Remote Nofitication
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
+    // successful
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    // fail
+}
+
+#pragma mark - CHANGE ICON
+
+- (void)_changeIcon{
+    // change logo
+    if ([UIApplication sharedApplication].supportsAlternateIcons) {
+        [[UIApplication sharedApplication] setAlternateIconName:@"ICONBLACK" completionHandler:^(NSError * _Nullable error) {
+            // callback
+        }];
+    }
+}
+
 @end

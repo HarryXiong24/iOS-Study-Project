@@ -8,8 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		17831ED7F7C64DA244BA3007 /* Pods_AppDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06098CE6C70C5AC54E5BE7BA /* Pods_AppDemo.framework */; };
+		2B3C75CC2C3CAC4900C4C969 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C75CB2C3CAC4900C4C969 /* Location.m */; };
+		2B6A2BDB2C3F5E6D005EEE85 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A2BDA2C3F5E6D005EEE85 /* Person.m */; };
+		2B6A2BE12C3F5EB8005EEE85 /* PersonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A2BE02C3F5EB8005EEE85 /* PersonViewModel.m */; };
+		2B6A2BE42C3F5EFC005EEE85 /* PersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A2BE32C3F5EFC005EEE85 /* PersonView.m */; };
+		2B6A2BEA2C3F5F72005EEE85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A2BE92C3F5F72005EEE85 /* ViewController.m */; };
+		2B6A2BED2C3F6001005EEE85 /* PersonViewMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A2BEC2C3F6001005EEE85 /* PersonViewMVC.m */; };
+		2B6A2BF02C3F6040005EEE85 /* ViewControllerMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A2BEF2C3F6040005EEE85 /* ViewControllerMVC.m */; };
 		2B6B14452C2DE3E500A6C5B8 /* ListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B14442C2DE3E500A6C5B8 /* ListLoader.m */; };
 		2B6B144A2C2E0B0000A6C5B8 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B14492C2E0B0000A6C5B8 /* Weather.m */; };
+		2BA284F32C3DDB35002D63E6 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA284F22C3DDB35002D63E6 /* Notification.m */; };
+		2BA284F62C3DEF76002D63E6 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA284F52C3DEF76002D63E6 /* SearchBar.m */; };
+		2BA284F92C3E029F002D63E6 /* TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA284F82C3E029F002D63E6 /* TextView.m */; };
 		2BD257C42C2B7BC500215ACC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257C32C2B7BC500215ACC /* AppDelegate.m */; };
 		2BD257C72C2B7BC500215ACC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257C62C2B7BC500215ACC /* SceneDelegate.m */; };
 		2BD257CA2C2B7BC500215ACC /* TestAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD257C92C2B7BC500215ACC /* TestAController.m */; };
@@ -49,10 +59,30 @@
 
 /* Begin PBXFileReference section */
 		06098CE6C70C5AC54E5BE7BA /* Pods_AppDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3C75CA2C3CAC4900C4C969 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		2B3C75CB2C3CAC4900C4C969 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		2B6A2BD92C3F5E6D005EEE85 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		2B6A2BDA2C3F5E6D005EEE85 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		2B6A2BDF2C3F5EB8005EEE85 /* PersonViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonViewModel.h; sourceTree = "<group>"; };
+		2B6A2BE02C3F5EB8005EEE85 /* PersonViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonViewModel.m; sourceTree = "<group>"; };
+		2B6A2BE22C3F5EFC005EEE85 /* PersonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonView.h; sourceTree = "<group>"; };
+		2B6A2BE32C3F5EFC005EEE85 /* PersonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonView.m; sourceTree = "<group>"; };
+		2B6A2BE82C3F5F72005EEE85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2B6A2BE92C3F5F72005EEE85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B6A2BEB2C3F6001005EEE85 /* PersonViewMVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonViewMVC.h; sourceTree = "<group>"; };
+		2B6A2BEC2C3F6001005EEE85 /* PersonViewMVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonViewMVC.m; sourceTree = "<group>"; };
+		2B6A2BEE2C3F6040005EEE85 /* ViewControllerMVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerMVC.h; sourceTree = "<group>"; };
+		2B6A2BEF2C3F6040005EEE85 /* ViewControllerMVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMVC.m; sourceTree = "<group>"; };
 		2B6B14432C2DE3E500A6C5B8 /* ListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListLoader.h; sourceTree = "<group>"; };
 		2B6B14442C2DE3E500A6C5B8 /* ListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListLoader.m; sourceTree = "<group>"; };
 		2B6B14482C2E0B0000A6C5B8 /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		2B6B14492C2E0B0000A6C5B8 /* Weather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		2BA284F12C3DDB35002D63E6 /* Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
+		2BA284F22C3DDB35002D63E6 /* Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
+		2BA284F42C3DEF76002D63E6 /* SearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
+		2BA284F52C3DEF76002D63E6 /* SearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
+		2BA284F72C3E029F002D63E6 /* TextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextView.h; sourceTree = "<group>"; };
+		2BA284F82C3E029F002D63E6 /* TextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextView.m; sourceTree = "<group>"; };
 		2BD257BF2C2B7BC500215ACC /* AppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD257C22C2B7BC500215ACC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BD257C32C2B7BC500215ACC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -135,6 +165,81 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		2B6A2BD62C3F5E1F005EEE85 /* DesignModel */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A2BDC2C3F5E89005EEE85 /* Model */,
+				2B6A2BD82C3F5E50005EEE85 /* MVC */,
+				2B6A2BD72C3F5E4A005EEE85 /* MVVM */,
+			);
+			path = DesignModel;
+			sourceTree = "<group>";
+		};
+		2B6A2BD72C3F5E4A005EEE85 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A2BDE2C3F5E9F005EEE85 /* View */,
+				2B6A2BDD2C3F5E93005EEE85 /* ViewModel */,
+				2B6A2BE82C3F5F72005EEE85 /* ViewController.h */,
+				2B6A2BE92C3F5F72005EEE85 /* ViewController.m */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		2B6A2BD82C3F5E50005EEE85 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A2BE72C3F5F4F005EEE85 /* Controller */,
+				2B6A2BE62C3F5F46005EEE85 /* View */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		2B6A2BDC2C3F5E89005EEE85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A2BD92C3F5E6D005EEE85 /* Person.h */,
+				2B6A2BDA2C3F5E6D005EEE85 /* Person.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B6A2BDD2C3F5E93005EEE85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A2BDF2C3F5EB8005EEE85 /* PersonViewModel.h */,
+				2B6A2BE02C3F5EB8005EEE85 /* PersonViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2B6A2BDE2C3F5E9F005EEE85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A2BE22C3F5EFC005EEE85 /* PersonView.h */,
+				2B6A2BE32C3F5EFC005EEE85 /* PersonView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B6A2BE62C3F5F46005EEE85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A2BEB2C3F6001005EEE85 /* PersonViewMVC.h */,
+				2B6A2BEC2C3F6001005EEE85 /* PersonViewMVC.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B6A2BE72C3F5F4F005EEE85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A2BEE2C3F6040005EEE85 /* ViewControllerMVC.h */,
+				2B6A2BEF2C3F6040005EEE85 /* ViewControllerMVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2B6B14462C2DE3EC00A6C5B8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +247,10 @@
 				2B6B14442C2DE3E500A6C5B8 /* ListLoader.m */,
 				A45118702C3B547A00BCFB00 /* Mediator.h */,
 				A451186E2C3B546F00BCFB00 /* Mediator.m */,
+				2B3C75CA2C3CAC4900C4C969 /* Location.h */,
+				2B3C75CB2C3CAC4900C4C969 /* Location.m */,
+				2BA284F12C3DDB35002D63E6 /* Notification.h */,
+				2BA284F22C3DDB35002D63E6 /* Notification.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -180,6 +289,7 @@
 		2BD257C12C2B7BC500215ACC /* AppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2B6A2BD62C3F5E1F005EEE85 /* DesignModel */,
 				2B6B14472C2E0A0700A6C5B8 /* Models */,
 				2B6B14462C2DE3EC00A6C5B8 /* Utils */,
 				2BD2580A2C2CCA1200215ACC /* Controllers */,
@@ -221,6 +331,10 @@
 				2BD2580F2C2CE68B00215ACC /* DeleteCellView.m */,
 				A45118712C3B5BAA00BCFB00 /* DetailViewController.h */,
 				A45118722C3B5BAA00BCFB00 /* DetailViewController.m */,
+				2BA284F42C3DEF76002D63E6 /* SearchBar.h */,
+				2BA284F52C3DEF76002D63E6 /* SearchBar.m */,
+				2BA284F72C3E029F002D63E6 /* TextView.h */,
+				2BA284F82C3E029F002D63E6 /* TextView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -489,16 +603,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA284F62C3DEF76002D63E6 /* SearchBar.m in Sources */,
+				2BA284F32C3DDB35002D63E6 /* Notification.m in Sources */,
+				2B6A2BDB2C3F5E6D005EEE85 /* Person.m in Sources */,
+				2B6A2BF02C3F6040005EEE85 /* ViewControllerMVC.m in Sources */,
 				2B6B144A2C2E0B0000A6C5B8 /* Weather.m in Sources */,
+				2B3C75CC2C3CAC4900C4C969 /* Location.m in Sources */,
 				2BD257CA2C2B7BC500215ACC /* TestAController.m in Sources */,
 				A451186F2C3B546F00BCFB00 /* Mediator.m in Sources */,
 				2BD257C42C2B7BC500215ACC /* AppDelegate.m in Sources */,
 				2BD257FE2C2BAD9900215ACC /* VideoController.m in Sources */,
 				2B6B14452C2DE3E500A6C5B8 /* ListLoader.m in Sources */,
+				2BA284F92C3E029F002D63E6 /* TextView.m in Sources */,
+				2B6A2BED2C3F6001005EEE85 /* PersonViewMVC.m in Sources */,
 				2BD257FB2C2B945700215ACC /* TableListController.m in Sources */,
 				2BD258092C2C98AF00215ACC /* NormalTableViewCell.m in Sources */,
 				2BD258102C2CE68B00215ACC /* DeleteCellView.m in Sources */,
 				2BD2580C2C2CD42E00215ACC /* WebViewController.m in Sources */,
+				2B6A2BE42C3F5EFC005EEE85 /* PersonView.m in Sources */,
+				2B6A2BEA2C3F5F72005EEE85 /* ViewController.m in Sources */,
+				2B6A2BE12C3F5EB8005EEE85 /* PersonViewModel.m in Sources */,
 				2BD257D52C2B7BC700215ACC /* main.m in Sources */,
 				2BD258012C2C8F4600215ACC /* IntroductionController.m in Sources */,
 				2BD257C72C2B7BC500215ACC /* SceneDelegate.m in Sources */,

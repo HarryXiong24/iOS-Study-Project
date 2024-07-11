@@ -5,6 +5,7 @@
 
 #import "TestAController.h"
 #import <Masonry/Masonry.h>
+#import "../Views/SearchBar.h"
 
 @interface TestAController ()
 
@@ -120,6 +121,20 @@
 
     UITapGestureRecognizer *tapGesture4 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(alert)];
     [view4 addGestureRecognizer:tapGesture4];
+    
+    // UITextField
+    SearchBar *searchBar = [[SearchBar alloc] init];
+    [self.view addSubview:searchBar];
+    
+    [searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_top).offset(10);
+        make.left.equalTo(self.view.mas_left).offset(10);
+        make.bottom.equalTo(backgroudDiv.mas_top).offset(-30);
+        make.right.equalTo(self.view.mas_right).offset(-10);
+    }];
+    
+    
+    
 }
 
 - (void)alert {
