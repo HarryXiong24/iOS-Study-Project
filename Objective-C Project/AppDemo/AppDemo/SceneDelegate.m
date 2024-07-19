@@ -11,6 +11,7 @@
 #import "SceneDelegate.h"
 #import "Utils/Location.h"
 #import "Utils/Notification.h"
+#import "Controllers/KeyboardController.h"
 
 @interface SceneDelegate () <UITabBarControllerDelegate>
 
@@ -39,8 +40,9 @@
     VideoController *viewController3 = [[VideoController alloc] init];
     IntroductionController *viewController4 = [[IntroductionController alloc] init];
     WebViewController *viewController5 = [[WebViewController alloc] init];
+    KeyboardController *viewController6 = [[KeyboardController alloc] init];
 
-    [tabBarController setViewControllers:@[viewController1, viewController2, viewController3, viewController4, viewController5]];
+    [tabBarController setViewControllers:@[viewController1, viewController2, viewController3, viewController4, viewController5, viewController6]];
 
     tabBarController.delegate = self;
 

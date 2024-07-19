@@ -34,6 +34,8 @@
 		2BD258092C2C98AF00215ACC /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD258082C2C98AF00215ACC /* NormalTableViewCell.m */; };
 		2BD2580C2C2CD42E00215ACC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2580B2C2CD42E00215ACC /* WebViewController.m */; };
 		2BD258102C2CE68B00215ACC /* DeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2580F2C2CE68B00215ACC /* DeleteCellView.m */; };
+		2BE77B212C48692D001DE6D5 /* KeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE77B202C48692D001DE6D5 /* KeyboardController.m */; };
+		2BE77B242C4878F9001DE6D5 /* KeyboardShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE77B232C4878F9001DE6D5 /* KeyboardShortcutManager.m */; };
 		8DE1F998B08C52688FD1B0CC /* Pods_AppDemo_AppDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780D23C5BCB0BED976F50BB2 /* Pods_AppDemo_AppDemoUITests.framework */; };
 		A451186F2C3B546F00BCFB00 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = A451186E2C3B546F00BCFB00 /* Mediator.m */; };
 		A45118732C3B5BAA00BCFB00 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45118722C3B5BAA00BCFB00 /* DetailViewController.m */; };
@@ -110,6 +112,10 @@
 		2BD2580D2C2CD43500215ACC /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		2BD2580E2C2CE68B00215ACC /* DeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteCellView.h; sourceTree = "<group>"; };
 		2BD2580F2C2CE68B00215ACC /* DeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteCellView.m; sourceTree = "<group>"; };
+		2BE77B1F2C48692D001DE6D5 /* KeyboardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardController.h; sourceTree = "<group>"; };
+		2BE77B202C48692D001DE6D5 /* KeyboardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardController.m; sourceTree = "<group>"; };
+		2BE77B222C4878F9001DE6D5 /* KeyboardShortcutManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardShortcutManager.h; sourceTree = "<group>"; };
+		2BE77B232C4878F9001DE6D5 /* KeyboardShortcutManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardShortcutManager.m; sourceTree = "<group>"; };
 		4B88F50180EDEBCCF828C497 /* Pods-AppDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-AppDemoTests/Pods-AppDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6946965C58A418093FA6FC82 /* Pods-AppDemo-AppDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemo-AppDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-AppDemo-AppDemoUITests/Pods-AppDemo-AppDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		780D23C5BCB0BED976F50BB2 /* Pods_AppDemo_AppDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppDemo_AppDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +257,8 @@
 				2B3C75CB2C3CAC4900C4C969 /* Location.m */,
 				2BA284F12C3DDB35002D63E6 /* Notification.h */,
 				2BA284F22C3DDB35002D63E6 /* Notification.m */,
+				2BE77B222C4878F9001DE6D5 /* KeyboardShortcutManager.h */,
+				2BE77B232C4878F9001DE6D5 /* KeyboardShortcutManager.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -352,6 +360,8 @@
 				2BD258002C2C8F4600215ACC /* IntroductionController.m */,
 				2BD2580D2C2CD43500215ACC /* WebViewController.h */,
 				2BD2580B2C2CD42E00215ACC /* WebViewController.m */,
+				2BE77B1F2C48692D001DE6D5 /* KeyboardController.h */,
+				2BE77B202C48692D001DE6D5 /* KeyboardController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -603,6 +613,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE77B242C4878F9001DE6D5 /* KeyboardShortcutManager.m in Sources */,
+				2BE77B212C48692D001DE6D5 /* KeyboardController.m in Sources */,
 				2BA284F62C3DEF76002D63E6 /* SearchBar.m in Sources */,
 				2BA284F32C3DDB35002D63E6 /* Notification.m in Sources */,
 				2B6A2BDB2C3F5E6D005EEE85 /* Person.m in Sources */,
